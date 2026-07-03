@@ -225,5 +225,34 @@ document.getElementById("answer").innerHTML=ans;
 }
 
 </script>
+<script>
+function replyAI() {
+
+    let q = document.getElementById("question").value.toLowerCase();
+    let answer = "";
+
+    if(q.includes("layak")){
+        answer = "Golongan yang layak menggunakan MyPDT ialah warga emas, OKU, wanita hamil dan kategori yang ditetapkan oleh Jabatan Imigresen Malaysia Negeri Johor.";
+    }
+    else if(q.includes("walk")){
+        answer = "Perkhidmatan Walk-In disediakan kepada pelanggan mengikut syarat dan waktu operasi yang ditetapkan.";
+    }
+    else if(q.includes("drive")){
+        answer = "MyPDT ialah perkhidmatan MyPassport Drive-In & Take yang membolehkan pelanggan mengambil pasport tanpa perlu turun dari kenderaan.";
+    }
+    else if(q.includes("lokasi")){
+        answer = "Lokasi MyPDT adalah di Kompleks Kementerian Dalam Negeri, Taman Setia Tropika, Johor Bahru.";
+    }
+    else if(q.includes("telefon")){
+        answer = "Telefon: 07-2338510.";
+    }
+    else{
+        answer = "Maaf, saya belum mempunyai jawapan untuk soalan tersebut. Sila rujuk pegawai Jabatan Imigresen Malaysia Negeri Johor.";
+    }
+
+    document.getElementById("answer").innerHTML = answer;
+
+}
+</script>
 </body>
 </html>
