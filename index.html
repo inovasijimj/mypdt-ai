@@ -63,13 +63,101 @@ box-shadow:0 3px 8px rgba(0,0,0,0.15);
 background:#084298;
 transform:translateY(-2px);
 }
+.topbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+}
+
+.logo{
+
+font-size:30px;
+
+font-weight:bold;
+
+color:white;
+
+}
+
+.logo span{
+
+font-size:34px;
+
+}
+
+nav{
+
+display:flex;
+
+gap:18px;
+
+flex-wrap:wrap;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+padding:10px 15px;
+
+border-radius:8px;
+
+transition:0.3s;
+
+}
+
+nav a:hover{
+
+background:white;
+
+color:#0b3768;
+
+}
 </style>
 </head>
 <body>
 
 <header>
-<h1>🤖 MyPDT Smart AI Assistant</h1>
+
+<div class="topbar">
+
+<div class="logo">
+🤖 <span>MyPDT Smart AI Assistant</span>
+</div>
+
+<nav>
+
+<a href="#utama">🏠 Utama</a>
+
+<a href="#chat">💬 Chat AI</a>
+
+<a href="#dokumen">📄 Dokumen</a>
+
+<a href="#drivein">🚗 Drive-In</a>
+
+<a href="#walkin">🚶 Walk-In</a>
+
+<a href="#faq">❓ FAQ</a>
+
+<a href="#lokasi">📍 Lokasi</a>
+
+</nav>
+
+</div>
+
 <p>MyPassport Drive-In & Take (MyPDT)</p>
+
 </header>
  <div class="container">
     <img src="banner-mypdt.jpeg" class="banner" alt="Banner MyPDT">
