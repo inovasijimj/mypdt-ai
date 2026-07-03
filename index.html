@@ -105,6 +105,46 @@ MyPDT (MyPassport Drive-In & Take) merupakan inisiatif Jabatan Imigresen Malaysi
 
 Portal ini menyediakan maklumat mengenai kelayakan menggunakan kaunter MyPDT, tatacara perkhidmatan, temujanji slot masa, lokasi serta bantuan melalui MyPDT Smart AI Assistant.
 </p>
+ <hr>
+
+<div style="margin-top:20px;">
+
+<label><strong>Taip soalan anda:</strong></label>
+
+<input
+type="text"
+id="question"
+placeholder="Contoh: Siapa layak menggunakan MyPDT?"
+style="width:100%;
+padding:12px;
+margin-top:10px;
+border-radius:8px;
+border:1px solid #ccc;">
+
+<br><br>
+
+<button
+onclick="replyAI()"
+class="btn">
+
+🤖 Hantar Soalan
+
+</button>
+
+<br><br>
+
+<div id="answer"
+style="
+background:#eef6ff;
+padding:15px;
+border-radius:10px;
+font-weight:bold;">
+
+Jawapan AI akan dipaparkan di sini.
+
+</div>
+
+</div>
 </div>
 
 <div class="card">
@@ -142,6 +182,48 @@ loading="lazy">
 </div>
 
 </div>
+<script>
 
+function replyAI(){
+
+let q=document.getElementById("question").value.toLowerCase();
+
+let ans="Maaf, saya belum mempunyai jawapan untuk soalan tersebut.";
+
+if(q.includes("layak")){
+
+ans="Golongan layak ialah warga emas, OKU, ibu hamil, kanak-kanak serta kategori yang ditetapkan oleh Jabatan Imigresen Malaysia.";
+
+}
+
+else if(q.includes("walk")){
+
+ans="Walk-In hanya dibenarkan kepada golongan yang layak mengikut syarat MyPDT.";
+
+}
+
+else if(q.includes("dokumen")){
+
+ans="Sila bawa MyKad dan dokumen sokongan yang berkaitan semasa hadir.";
+
+}
+
+else if(q.includes("lokasi")){
+
+ans="Kaunter MyPDT terletak di Jabatan Imigresen Malaysia Negeri Johor.";
+
+}
+
+else if(q.includes("masa")){
+
+ans="Sila hadir mengikut slot temujanji yang telah diberikan.";
+
+}
+
+document.getElementById("answer").innerHTML=ans;
+
+}
+
+</script>
 </body>
 </html>
