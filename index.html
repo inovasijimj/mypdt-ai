@@ -703,6 +703,25 @@ function replyAI() {
     else if(q.includes("telefon")){
         answer = "Telefon: 07-2338510.";
     }
+    else if(q.includes("tempahan") || q.includes("slot") || q.includes("qr")){
+    answer = "Untuk perkhidmatan Drive-In, sila buat tempahan slot terlebih dahulu dengan mengimbas Kod QR atau menekan butang Tempah Sekarang pada portal MyPDT.";
+}
+
+else if(q.includes("masa") || q.includes("waktu") || q.includes("operasi")){
+    answer = "Waktu operasi MyPDT ialah Isnin hingga Rabu, 10.00 pagi - 1.00 tengah hari dan 2.30 petang - 4.00 petang.";
+}
+
+else if(q.includes("dokumen") || q.includes("mykad") || q.includes("passport")){
+    answer = "Dokumen yang perlu dibawa ialah MyKad, Pasport Lama, Resit Bayaran dan Dokumen Sokongan (jika berkaitan).";
+}
+
+else if(q.includes("berapa lama") || q.includes("10 minit") || q.includes("proses")){
+    answer = "Tempoh pengambilan pasport dianggarkan sekitar 10 minit sekiranya semua dokumen lengkap.";
+}
+
+else if(q.includes("vip") || q.includes("oku") || q.includes("warga emas") || q.includes("hamil")){
+    answer = "Golongan yang layak menggunakan MyPDT termasuk VIP, OKU, warga emas, wanita hamil serta kategori lain yang ditetapkan oleh Jabatan Imigresen Malaysia.";
+}
     else{
         answer = "Maaf, saya belum mempunyai jawapan untuk soalan tersebut. Sila rujuk pegawai Jabatan Imigresen Malaysia Negeri Johor.";
     }
