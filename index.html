@@ -527,7 +527,7 @@ style="display:inline-block;margin-top:20px;">
     <h2>❓ Soalan Lazim (FAQ)</h2>
 
     <p><strong>S1:</strong> Siapa layak menggunakan MyPDT?</p>
-    <p>✔️ Warga emas, OKU, wanita hamil dan kategori yang ditetapkan.</p>
+    <p>✔️ Pemohon Online, Warga emas, OKU, Wanita hamil dan VIP.</p>
 
     <p><strong>S2:</strong> Adakah perlu membuat tempahan?</p>
     <p>✔️ Ya, bagi Drive-In. Walk-In tidak memerlukan tempahan.</p>
@@ -649,7 +649,7 @@ let ans="Maaf, saya belum mempunyai jawapan untuk soalan tersebut.";
 
 if(q.includes("layak")){
 
-ans="Golongan layak ialah warga emas, OKU, ibu hamil, kanak-kanak serta kategori yang ditetapkan oleh Jabatan Imigresen Malaysia.";
+ans="Golongan layak ialah Pemohon Online, Warga emas, OKU, Ibu hamil dan VIP.";
 
 }
 
@@ -689,16 +689,16 @@ function replyAI() {
     let answer = "";
 
     if(q.includes("layak")){
-        answer = "Golongan yang layak menggunakan MyPDT ialah warga emas, OKU, wanita hamil dan kategori yang ditetapkan oleh Jabatan Imigresen Malaysia Negeri Johor.";
+        answer = "Golongan yang layak menggunakan MyPDT ialah Pemohon Online, Warga emas, OKU, Wanita hamil dan VIP.";
     }
     else if(q.includes("walk")){
         answer = "Perkhidmatan Walk-In disediakan kepada pelanggan mengikut syarat dan waktu operasi yang ditetapkan.";
     }
     else if(q.includes("drive")){
-        answer = "MyPDT ialah perkhidmatan MyPassport Drive-In & Take yang membolehkan pelanggan mengambil pasport tanpa perlu turun dari kenderaan.";
+        answer = "MyPDT ialah perkhidmatan MyPassport Drive-In & Take yang membolehkan pelanggan mengambil pasport dengan membawa kenderaan pandu masuk terus ke hadapan Kaunter MyPDT.";
     }
     else if(q.includes("lokasi")){
-        answer = "Lokasi MyPDT adalah di Kompleks Kementerian Dalam Negeri, Taman Setia Tropika, Johor Bahru.";
+        answer = "Lokasi MyPDT adalah di Aras G, Blok 1, Kompleks Kementerian Dalam Negeri, Taman Setia Tropika, Johor Bahru.";
     }
     else if(q.includes("telefon")){
         answer = "Telefon: 07-2338510.";
@@ -720,13 +720,21 @@ else if(q.includes("berapa lama") || q.includes("10 minit") || q.includes("prose
 }
 
 else if(q.includes("vip") || q.includes("oku") || q.includes("warga emas") || q.includes("hamil")){
-    answer = "Golongan yang layak menggunakan MyPDT termasuk VIP, OKU, warga emas, wanita hamil serta kategori lain yang ditetapkan oleh Jabatan Imigresen Malaysia.";
+    answer = "Golongan yang layak menggunakan MyPDT termasuk VIP, OKU, Warga emas, Wanita hamil dan Pemohon Online.";
 }
     else{
         answer = "Maaf, saya belum mempunyai jawapan untuk soalan tersebut. Sila rujuk pegawai Jabatan Imigresen Malaysia Negeri Johor.";
     }
 
-    document.getElementById("answer").innerHTML = answer;
+    document.getElementById("answer").innerHTML =
+"🤖 <b>MyPDT AI sedang menganalisis soalan anda...</b>";
+
+setTimeout(function(){
+
+document.getElementById("answer").innerHTML =
+"<div style='background:#eef7ff;padding:15px;border-left:5px solid #0b5ed7;border-radius:8px;'><b>🤖 MyPDT AI</b><br><br>"+answer+"</div>";
+
+},1000);
 
 }
 </script>
