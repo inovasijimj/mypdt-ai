@@ -185,6 +185,141 @@ color:#555;
 font-size:48px;
 
 }
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.service-card{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-6px);
+}
+
+.icon{
+    font-size:42px;
+    margin-bottom:12px;
+}
+
+/* ===== Paparan Telefon ===== */
+
+@media (max-width:768px){
+
+.topbar{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    display:block;
+    margin:8px 0;
+}
+
+.container{
+    padding:12px;
+}
+
+.banner{
+    border-radius:10px;
+}
+
+.card{
+    padding:18px;
+}
+
+.card h2{
+    font-size:24px;
+}
+
+.btn{
+    width:100%;
+    margin:8px 0;
+}
+
+.services{
+    grid-template-columns:1fr;
+}
+
+.service-card{
+    width:100%;
+}
+
+input{
+    width:100%;
+}
+
+}
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+    background:linear-gradient(135deg,#0b3768,#123f7a,#1f5ea8);
+    color:white;
+    border-radius:20px;
+    padding:40px;
+    margin:25px auto;
+    overflow:hidden;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero-text p{
+    font-size:20px;
+    line-height:1.6;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    max-width:100%;
+    width:420px;
+}
+
+@media(max-width:768px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:34px;
+}
+
+.hero-text p{
+    font-size:17px;
+}
+
+}
 </style>
 </head>
 <body>
@@ -220,9 +355,27 @@ font-size:48px;
 <p>MyPassport Drive-In & Take (MyPDT)</p>
 
 </header>
- <div class="container" id="utama">
-    <img src="banner-mypdt.jpeg" class="banner" alt="Banner MyPDT">
-</div>
+ <section class="hero" id="utama">
+
+    <div class="hero-text">
+
+        <h1>Selamat Datang ke<br>MyPDT Smart AI Assistant</h1>
+
+        <p>
+            Pembantu digital rasmi bagi projek inovasi
+            <strong>MyPassport Drive-In & Take (MyPDT)</strong><br>
+            Jabatan Imigresen Malaysia Negeri Johor.
+        </p>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img src="banner-mypdt.jpeg" alt="Banner MyPDT">
+
+    </div>
+
+</section>
 
 <div class="container">
 
