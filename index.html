@@ -172,6 +172,71 @@ font-size:60px;
 margin-bottom:18px;
 display:block;
 }
+
+/* ===== INFO GRID ===== */
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+    margin:35px 0;
+}
+
+.info-card{
+    background:#fff;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+ 
+    display:flex;
+    flex-direction:column;
+}
+
+.info-card h2{
+    color:#0b3768;
+    margin-bottom:20px;
+}
+
+.info-card ul{
+    padding-left:20px;
+    line-height:2;
+}
+
+.green-box,
+.blue-box,
+.red-box,
+.success-box{
+    padding:15px;
+    border-radius:12px;
+    margin-top:10px;
+}
+
+.green-box{
+    background:#e8f8ec;
+}
+
+.blue-box{
+    background:#eaf4ff;
+}
+
+.red-box{
+    background:#fdeaea;
+}
+
+.success-box{
+    background:#e8fff2;
+    border-left:5px solid #16a34a;
+}
+
+.info-card img{
+    width:220px;
+    border-radius:12px;
+}
+
+.info-card .btn{
+    display:block;
+    text-align:center;
+}
  
 /* ========================= */
 /* RESPONSIVE DESIGN */
@@ -450,90 +515,104 @@ filter:drop-shadow(0 10px 25px rgba(0,0,0,.35));
 </div>
 
 </div>
-<div class="card" id="dokumen">
-    <h2>📄 Dokumen Diperlukan</h2>
+<div class="info-grid">
 
-    <ul>
-        <li>MyKad</li>
-        <li>Pasport Lama</li>
-        <li>Resit Bayaran
-    </ul>
+<div class="info-card">
+
+<h2>👥 Golongan Yang Layak</h2>
+
+<ul>
+<li>💻 Pemohon Online</li>
+<li>⭐ VIP</li>
+<li>♿ Orang Kurang Upaya (OKU)</li>
+<li>👴 Warga Emas (60+)</li>
+<li>🤰 Wanita Hamil</li>
+</ul>
+
+<div class="success-box">
+✅ Jika anda tergolong dalam salah satu kategori di atas,
+anda layak menggunakan perkhidmatan MyPDT.
 </div>
 
-<div class="card" id="drivein">
-    <h2>🚗 Perkhidmatan Drive-In</h2>
-
-    <p><strong>Waktu Operasi:</strong></p>
-
-    <ul>
-        <li>Isnin - Rabu</li>
-        <li>10.00 pagi - 1.00 tengah hari</li>
-        <li>2.30 petang - 4.00 petang</li>
-    </ul>
-
-    <p>Tempahan slot diperlukan sebelum hadir.</p>
 </div>
-<div class="card" id="tempahan">
 
-<h2 style="font-size:34px;color:#0b3768;">
-📅 Tempahan Slot Drive-In
-</h2>
+
+
+<div class="info-card">
+
+<h2>🕒 Waktu Operasi</h2>
+
+<div class="green-box">
+
+<b>WALK-IN</b><br><br>
+
+Isnin - Rabu<br>
+
+9.00 pagi - 1.00 tengah hari<br>
+
+2.30 petang - 4.00 petang
+
+</div>
+
+<br>
+
+<div class="blue-box">
+
+<b>DRIVE-IN</b><br><br>
+
+Isnin - Rabu<br>
+
+10.00 pagi - 1.00 tengah hari<br>
+
+2.30 petang - 4.00 petang
+
+</div>
+
+<br>
+
+<div class="red-box">
+
+Ditutup:
+Khamis hingga Ahad
+dan Cuti Umum.
+
+</div>
+
+</div>
+
+
+
+<div class="info-card" id="tempahan">
+
+<h2>📅 Tempahan Drive-In</h2>
 
 <p>
-Imbas kod QR di bawah untuk membuat tempahan slot pengambilan pasport MyPDT.
+
+Sila imbas QR Code di bawah untuk membuat tempahan slot.
+
 </p>
 
-<div style="text-align:center;margin:25px 0;">
+<div style="text-align:center;">
 
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://tinyurl.com/JIMJ-MyPDT"
-style="width:300px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,.2);"
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://tinyurl.com/JIM-MyPDT">
 
 </div>
 
-<p style="text-align:center;">
-✔️ Tempahan dalam talian<br>
-✔️ Mudah & pantas<br>
-✔️ Elakkan menunggu lama
-</p>
- 
-<a href="https://tinyurl.com/JIMJ-MyPDT"
+<br>
+
+<a href="https://tinyurl.com/JIM-MyPDT"
+
 target="_blank"
+
 class="btn">
-📅 Tempah Sekarang
+
+📅 Tempah Slot
+
 </a>
- <p style="text-align:center;color:#666;font-size:14px;">
-📱 Imbas QR Code atau klik <b>Tempah Sekarang</b> untuk membuat tempahan slot MyPDT.
-</p>
- 
-</div>
- 
-<div class="card" id="walkin">
-    <h2>🚶 Perkhidmatan Walk-In</h2>
 
-    <p><strong>Waktu Operasi:</strong></p>
-
-    <ul>
-        <li>Isnin - Rabu</li>
-        <li>9.00 pagi - 1.00 tengah hari</li>
-        <li>2.30 petang - 4.00 petang</li>
-    </ul>
-
-    <p>Walk-In tidak memerlukan tempahan.</p>
 </div>
 
-<div class="card" id="faq">
-    <h2>❓ Soalan Lazim (FAQ)</h2>
-
-    <p><strong>S1:</strong> Siapa layak menggunakan MyPDT?</p>
-    <p>✔️ Pemohon Online, Warga emas, OKU, Wanita hamil dan VIP.</p>
-
-    <p><strong>S2:</strong> Adakah perlu membuat tempahan?</p>
-    <p>✔️ Ya, bagi Drive-In. Walk-In tidak memerlukan tempahan.</p>
-
-    <p><strong>S3:</strong> Berapa lama proses pengambilan?</p>
-    <p>✔️ Anggaran sekitar 10 minit.</p>
 </div>
-
 <div class="card" id="chat">
 <h2>🤖 Ruang Chat MyPDT AI</h2>
 
