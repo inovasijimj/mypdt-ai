@@ -574,6 +574,7 @@ Portal ini menyediakan maklumat mengenai kelayakan menggunakan kaunter MyPDT, ta
 <input
 type="text"
 id="question"
+onkeypress="if(event.key==='Enter'){replyAI();}"
 placeholder="Contoh: Siapa layak menggunakan MyPDT?"
 style="width:100%;
 padding:12px;
@@ -680,7 +681,11 @@ ans="Sila hadir mengikut slot temujanji yang telah diberikan.";
 
 }
 
-document.getElementById("answer").innerHTML=ans;
+setTimeout(function(){
+
+    document.getElementById("answer").innerHTML = answer;
+
+},1200);
 
 }
 
@@ -691,9 +696,28 @@ function replyAI() {
     let q = document.getElementById("question").value.toLowerCase();
     let answer = "";
 
-    if(q.includes("layak")){
-        answer = "Golongan yang layak menggunakan MyPDT ialah Pemohon Online, Warga emas, OKU, Wanita hamil dan VIP.";
-    }
+    document.getElementById("answer").innerHTML =
+    "🤖 MyPDT AI sedang menganalisis soalan anda...";
+
+ if(q.includes("hai") || q.includes("hi") || q.includes("hello")){
+    answer = "👋 Salam sejahtera. Selamat datang ke MyPDT Smart AI Assistant. Bagaimana saya boleh membantu anda hari ini?";
+}
+
+else if(q.includes("assalamualaikum")){
+    answer = "🕌 Waalaikumussalam warahmatullahi wabarakatuh. Selamat datang ke MyPDT Smart AI Assistant.";
+}
+
+else if(q.includes("terima kasih") || q.includes("thanks") || q.includes("thank you")){
+    answer = "😊 Sama-sama. Terima kasih kerana menggunakan MyPDT Smart AI Assistant. Semoga urusan anda dipermudahkan.";
+}
+
+else if(q.includes("apa itu mypdt")){
+    answer = "📘 MyPDT ialah singkatan kepada MyPassport Drive-In & Take, iaitu inovasi Jabatan Imigresen Malaysia Negeri Johor yang memudahkan pengambilan pasport bagi pelanggan yang layak.";
+}
+
+else if(q.includes("layak")){
+    answer = "Golongan yang layak menggunakan MyPDT ialah Pemohon Online, Warga emas, OKU, Wanita hamil dan VIP.";
+}
     else if(q.includes("walk")){
         answer = "Perkhidmatan Walk-In disediakan kepada pelanggan mengikut syarat dan waktu operasi yang ditetapkan.";
     }
