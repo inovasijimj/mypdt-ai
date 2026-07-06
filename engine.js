@@ -98,23 +98,23 @@ Jika ada soalan lain mengenai MyPDT, sila tanya saya.
 
 }
    if(text.includes("orang tua")){
-    q+=" warga emas";
+    text+=" warga emas";
 }
 
 if(text.includes("oku")){
-    q+=" orang kurang upaya";
+    text+=" orang kurang upaya";
 }
 
 if(text.includes("mengandung")){
-    q+=" wanita hamil";
+    text+=" wanita hamil";
 }
 
 if(text.includes("booking")){
-    q+=" tempahan";
+    text+=" tempahan";
 }
 
 if(text.includes("book")){
-    q+=" tempahan";
+    text+=" tempahan";
 }
     // ==========================
 // Multi Topik
