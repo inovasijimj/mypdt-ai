@@ -1,27 +1,16 @@
-function findAnswer(question) {
+function findAnswer(question){
 
-    // Tukar kepada huruf kecil
-    question = question.toLowerCase();
+    const q = question.toLowerCase().trim();
 
-    // Buang ruang berlebihan
-    question = question.trim();
+    for(const key in knowledge){
 
-    // Semak semua kategori dalam knowledge
-    for (const category in knowledge) {
+        const item = knowledge[key];
 
-        const item = knowledge[category];
+        for(const keyword of item.keywords){
 
-        // Semak semua keyword dalam kategori
-        for (const keyword of item.keywords) {
+            if(q.includes(keyword.toLowerCase())){
 
-            if (question.includes(keyword.toLowerCase())) {
-
-                return {
-                    found: true,
-                    category: category,
-                    title: item.title,
-                    answer: item.answer
-                };
+                return item;
 
             }
 
@@ -29,17 +18,23 @@ function findAnswer(question) {
 
     }
 
-    // Jika tiada padanan
-    return {
-        found: false,
-        title: "Luar Skop",
-        answer:
-`Maaf.
+    return{
+        title:"Tidak Dijumpai",
+        answer:`
+❌ Maaf, saya tidak menemui jawapan untuk soalan tersebut.
 
-Saya hanya membantu berkaitan
-MyPassport Drive-In & Take (MyPDT),
-perkhidmatan pasport
-dan maklumat yang berkaitan.`
+Sila cuba gunakan kata seperti:
+
+* layak
+* dokumen
+* waktu operasi
+* tempahan
+* QR
+* Drive-In
+* Walk-In
+* MyKad
+* Pasport
+`
     };
 
 }
