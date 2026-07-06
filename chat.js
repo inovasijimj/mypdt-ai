@@ -1,37 +1,25 @@
-function sendMessage() {
+function replyAI() {
 
-    const input = document.getElementById("userInput");
+    const question = document.getElementById("question").value.trim();
 
-    const chatBox = document.getElementById("chatBox");
-
-    const question = input.value.trim();
-
-    if(question==="") return;
-
-    // Papar mesej pengguna
-
-    chatBox.innerHTML += `
-    <div class="user-message">
-        👤 ${question}
-    </div>
-    `;
-
-    // Cari jawapan
+    if(question===""){
+        return;
+    }
 
     const result = findAnswer(question);
 
-    // Papar jawapan AI
+    document.getElementById("answer").innerHTML = `
+    <div style="background:#eef7ff;
+                padding:15px;
+                border-left:5px solid #0b5ed7;
+                border-radius:8px;">
 
-    chatBox.innerHTML += `
-    <div class="ai-message">
-        🤖<br><br>
+        🤖 <b>MyPDT Smart AI</b><br><br>
+
         ${result.answer}
+
     </div>
     `;
 
-    // Scroll ke bawah
-
-    chatBox.scrollTop = chatBox.scrollHeight;
-
-    input.value="";
+    document.getElementById("question").value="";
 }
