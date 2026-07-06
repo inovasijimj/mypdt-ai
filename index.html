@@ -283,6 +283,13 @@ display:block;
     display:block;
 }
 
+.menu-toggle{
+    display:none;
+    font-size:32px;
+    color:white;
+    cursor:pointer;
+}
+ 
 /* ===== Paparan Telefon ===== */
 
 @media (max-width:768px){
@@ -299,16 +306,24 @@ header{
     flex-direction:column;
     gap:15px;
     text-align:center;
+    position:relative;
 }
 
 nav{
+    display:none;
+    width:100%;
+}
+
+nav.active{
     display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:8px;
+    flex-direction:column;
+    gap:10px;
 }
 
 nav a{
+    display:block;
+    width:100%;
+    text-align:center;
     margin:4px;
     font-size:14px;
 }
@@ -501,7 +516,11 @@ filter:drop-shadow(0 10px 25px rgba(0,0,0,.35));
 🤖 <span>MyPDT Smart AI Assistant</span>
 </div>
 
-<nav>
+<div class="menu-toggle" onclick="toggleMenu()">
+☰
+</div>
+
+<nav id="navMenu">
 
 <a href="#utama">🏠 Utama</a>
 
@@ -918,6 +937,9 @@ document.getElementById("answer").innerHTML =
 <script>
 let mybutton = document.getElementById("topBtn");
 
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("active");
+}
 window.onscroll = function () {
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         mybutton.style.display = "block";
