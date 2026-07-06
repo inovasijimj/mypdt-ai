@@ -438,6 +438,28 @@ filter:drop-shadow(0 10px 25px rgba(0,0,0,.35));
     border:none;
     border-top:1px solid rgba(255,255,255,.3);
 }
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    border: none;
+    outline: none;
+    background: #0b2f6b;
+    color: white;
+    cursor: pointer;
+    padding: 14px 18px;
+    border-radius: 50%;
+    font-size: 22px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.25);
+    transition: .3s;
+}
+
+#topBtn:hover{
+    background:#174ea6;
+    transform:translateY(-3px);
+}
 </style>
 </head>
 <body>
@@ -861,6 +883,27 @@ document.getElementById("answer").innerHTML =
         Jabatan Imigresen Malaysia Negeri Johor. Hak Cipta Terpelihara.
     </p>
 </footer>
+
+<button onclick="topFunction()" id="topBtn" title="Kembali ke Atas">↑</button>
+
+<script>
+let mybutton = document.getElementById("topBtn");
+
+window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+};
+
+function topFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+</script>
 
 </body>
 </html>
