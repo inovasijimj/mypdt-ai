@@ -116,7 +116,42 @@ if(text.includes("booking")){
 if(text.includes("book")){
     q+=" tempahan";
 }
-    
+    // ==========================
+// Multi Topik
+// ==========================
+
+let responses = [];
+
+for(const key in knowledge){
+
+    const item = knowledge[key];
+
+    for(const keyword of item.keywords){
+
+        if(text.includes(keyword.toLowerCase())){
+
+            if(!responses.includes(item.answer)){
+                responses.push(item.answer);
+            }
+
+            break;
+        }
+
+    }
+
+}
+
+if(responses.length>1){
+
+    return{
+
+        title:"Maklumat MyPDT",
+
+        answer:responses.join("<hr>")
+
+    };
+
+}
     for(const key in knowledge){
 
         const item = knowledge[key];
