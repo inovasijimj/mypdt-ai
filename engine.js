@@ -1,8 +1,47 @@
 function findAnswer(question){
 
     const q = question.toLowerCase().trim();
+    // =========================
+// Normalisasi ayat pengguna
+// =========================
+
+let text = q;
+
+// Buang tanda baca
+text = text.replace(/[.,?!]/g,"");
+
+// Singkatan biasa
+text = text.replace(/xleh/g,"tak boleh");
+text = text.replace(/takleh/g,"tak boleh");
+text = text.replace(/sy/g,"saya");
+text = text.replace(/sya/g,"saya");
+text = text.replace(/nk/g,"nak");
+text = text.replace(/dkt/g,"dekat");
+text = text.replace(/pls/g,"tolong");
+
+// Passport
+text = text.replace(/paspot/g,"passport");
+text = text.replace(/pasport/g,"passport");
+
+// Booking
+text = text.replace(/booking/g,"tempahan");
+text = text.replace(/book/g,"tempahan");
+
+// Walk In
+text = text.replace(/walk in/g,"walkin");
+text = text.replace(/drive in/g,"drivein");
+
+// Warga emas
+text = text.replace(/orang tua/g,"warga emas");
+
+// OKU
+text = text.replace(/disabled/g,"oku");
+text = text.replace(/cacat/g,"oku");
+
+// Hamil
+text = text.replace(/mengandung/g,"wanita hamil");
 // Salam
-if(q.includes("assalamualaikum") || q=="salam"){
+if(text.includes("assalamualaikum") || q=="salam"){
 
     return{
         title:"Salam",
@@ -28,7 +67,7 @@ Sila taip soalan anda.
 }
 
 // Hello
-if(q.includes("hello") || q.includes("hai") || q.includes("hi")){
+if(text.includes("hello") || text.includes("hai") || text.includes("hi")){
 
     return{
         title:"Hello",
@@ -44,7 +83,7 @@ Apa yang ingin anda ketahui mengenai MyPassport Drive-In & Take?
 }
 
 // Terima kasih
-if(q.includes("terima kasih") || q.includes("thanks")){
+if(text.includes("terima kasih") || text.includes("thanks")){
 
     return{
         title:"Sama-sama",
@@ -58,23 +97,23 @@ Jika ada soalan lain mengenai MyPDT, sila tanya saya.
     };
 
 }
-   if(q.includes("orang tua")){
+   if(text.includes("orang tua")){
     q+=" warga emas";
 }
 
-if(q.includes("oku")){
+if(text.includes("oku")){
     q+=" orang kurang upaya";
 }
 
-if(q.includes("mengandung")){
+if(text.includes("mengandung")){
     q+=" wanita hamil";
 }
 
-if(q.includes("booking")){
+if(text.includes("booking")){
     q+=" tempahan";
 }
 
-if(q.includes("book")){
+if(text.includes("book")){
     q+=" tempahan";
 }
     
@@ -84,7 +123,7 @@ if(q.includes("book")){
 
         for(const keyword of item.keywords){
 
-            if(q.includes(keyword.toLowerCase())){
+            if(text.includes(keyword.toLowerCase())){
 
                 return item;
 
