@@ -1,6 +1,6 @@
 function findAnswer(question){
 
-    const q = question.toLowerCase().trim();
+    let q = question.toLowerCase().trim();
     // =========================
 // Normalisasi ayat pengguna
 // =========================
