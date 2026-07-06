@@ -287,51 +287,78 @@ display:block;
 
 @media (max-width:768px){
 
+header{
+    padding:25px 15px;
+}
+
+.container{
+    padding:10px;
+}
+
 .topbar{
     flex-direction:column;
+    gap:15px;
     text-align:center;
 }
 
 nav{
-    margin-top:15px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:8px;
 }
 
 nav a{
-    display:block;
-    margin:8px 0;
+    margin:4px;
+    font-size:14px;
 }
 
-.container{
-    padding:12px;
+.hero{
+    flex-direction:column;
+    text-align:center;
 }
 
-.banner{
-    border-radius:10px;
+.hero-text h1{
+    font-size:30px;
 }
 
-.card{
-    padding:18px;
-}
-
-.card h2{
-    font-size:42px;
-}
-
-.btn{
-    width:100%;
-    margin:8px 0;
+.hero-text p{
+    font-size:16px;
 }
 
 .services{
     grid-template-columns:1fr;
 }
 
+.info-grid{
+    grid-template-columns:1fr;
+}
+
 .service-card{
+    min-height:auto;
+}
+
+.card{
+    padding:18px;
+}
+
+.banner{
     width:100%;
 }
 
-input{
+iframe{
     width:100%;
+    height:250px;
+}
+
+.footer{
+    padding:20px 15px;
+    font-size:14px;
+}
+
+#topBtn{
+    right:15px;
+    bottom:20px;
 }
 
 }
