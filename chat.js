@@ -1,7 +1,17 @@
 function replyAI(){
 
     const question=document.getElementById("question").value.trim();
-
+    document.getElementById("answer").innerHTML = `
+    <div style="
+    background:#f5f7fb;
+    padding:18px;
+    border-radius:12px;
+    border-left:5px solid #0b5ed7;
+    font-weight:bold;
+    ">
+    🤖 MyPDT AI sedang mencari jawapan...
+    </div>
+    `;
     if(question=="") return;
 
     document.getElementById("answer").innerHTML=`
@@ -28,7 +38,7 @@ function replyAI(){
         </div>
         `;
 
-    },700);
+    },1000);
 
     document.getElementById("question").value="";
 }
