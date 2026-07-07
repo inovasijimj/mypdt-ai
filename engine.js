@@ -121,7 +121,7 @@ if(text.includes("book")){
 // ==========================
 
 let responses = [];
-
+let titles=[];
 for(const key in knowledge){
 
     const item = knowledge[key];
@@ -132,7 +132,10 @@ for(const key in knowledge){
 
             if(!responses.includes(item.answer)){
                 responses.push(item.answer);
-            }
+
+if(!titles.includes(item.title)){
+    titles.push(item.title);
+}
 
             break;
         }
@@ -145,11 +148,10 @@ if(responses.length>1){
 
     return{
 
-        title:"Maklumat MyPDT",
+title:titles.join(" • "),
 
-        answer:responses.join("<hr>")
-
-    };
+answer:responses.join("<hr>")
+};
 
 }
     for(const key in knowledge){
