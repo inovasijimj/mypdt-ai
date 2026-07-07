@@ -122,6 +122,7 @@ if(text.includes("book")){
 
 let responses = [];
 let titles=[];
+let scores={};
 for(const key in knowledge){
 
     const item = knowledge[key];
@@ -132,6 +133,7 @@ for(const key in knowledge){
 
             if(!responses.includes(item.answer)){
                 responses.push(item.answer);
+                scores[item.title] = (scores[item.title] || 0) + 1;
 
 if(!titles.includes(item.title)){
     titles.push(item.title);
@@ -145,7 +147,7 @@ if(!titles.includes(item.title)){
 }
 
 if(responses.length>1){
-
+titles.sort((a,b)=>(scores[b]||0)-(scores[a]||0));
     return{
 
 title:titles.join(" • "),
