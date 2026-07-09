@@ -59,7 +59,7 @@ Ia merupakan projek inovasi Jabatan Imigresen Malaysia Negeri Johor yang menyedi
             "wanita hamil",
             "mengandung",
             "pregnant",
-            "vip"
+            "vip",
             "eligible",
             "eligibility",
             "who is eligible",
@@ -76,30 +76,29 @@ Ia merupakan projek inovasi Jabatan Imigresen Malaysia Negeri Johor yang menyedi
         answer: `
 👥 Perkhidmatan MyPDT disediakan kepada lima golongan sasar:
 
-✅ Pemohon Online
+✅ Warga Emas berumur 60 tahun dan ke atas
 
 ✅ Orang Kelainan Upaya (OKU)
 
-✅ Warga Emas berumur 60 tahun dan ke atas
-
 ✅ Wanita Hamil
+
+✅ Pemohon Online
 
 ✅ VIP
 
 Pemohon yang tergolong dalam sekurang-kurangnya satu kategori tersebut layak menggunakan perkhidmatan MyPDT.
-        `
     `,
 
 answer_en: `
 👥 MyPDT services are available to five target groups:
 
-✅ Online Applicants
+✅ Senior Citizens aged 60 years and above
 
 ✅ Persons with Disabilities (OKU)
 
-✅ Senior Citizens aged 60 years and above
-
 ✅ Pregnant Women
+
+✅ Online Applicants
 
 ✅ VIPs
 
