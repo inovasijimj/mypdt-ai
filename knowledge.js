@@ -28,6 +28,7 @@ Ia merupakan projek inovasi Jabatan Imigresen Malaysia Negeri Johor yang menyedi
     // =====================================================
     kelayakan: {
         title: "👥 Kelayakan MyPDT",
+        title_en: "👥 MyPDT Eligibility",
 
         keywords: [
             "layak",
@@ -59,6 +60,17 @@ Ia merupakan projek inovasi Jabatan Imigresen Malaysia Negeri Johor yang menyedi
             "mengandung",
             "pregnant",
             "vip"
+            "eligible",
+            "eligibility",
+            "who is eligible",
+            "am i eligible",
+            "can i use",
+            "can i use mypdt",
+            "online applicant",
+            "senior citizen",
+            "senior citizens",
+            "pregnant woman",
+            "persons with disabilities"
         ],
 
         answer: `
@@ -76,7 +88,25 @@ Ia merupakan projek inovasi Jabatan Imigresen Malaysia Negeri Johor yang menyedi
 
 Pemohon yang tergolong dalam sekurang-kurangnya satu kategori tersebut layak menggunakan perkhidmatan MyPDT.
         `
-    },
+    `,
+
+answer_en: `
+👥 MyPDT services are available to five target groups:
+
+✅ Online Applicants
+
+✅ Persons with Disabilities (OKU)
+
+✅ Senior Citizens aged 60 years and above
+
+✅ Pregnant Women
+
+✅ VIPs
+
+Applicants who belong to at least one of these categories are eligible to use the MyPDT service.
+`
+
+},
 
 
     // =====================================================
