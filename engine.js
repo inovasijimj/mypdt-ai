@@ -1,194 +1,444 @@
-function findAnswer(question){
+// ==========================================================
+// MyPDT SMART AI ASSISTANT
+// MATCHING ENGINE v2.0
+// ==========================================================
 
-    let q = question.toLowerCase().trim();
-    // =========================
-// Normalisasi ayat pengguna
-// =========================
 
-let text = q;
+// ==========================================================
+// 1. NORMALISASI SOALAN PENGGUNA
+// ==========================================================
 
-// Buang tanda baca
-text = text.replace(/[.,?!]/g,"");
+function normalizeText(text) {
 
-// Singkatan biasa
-text = text.replace(/xleh/g,"tak boleh");
-text = text.replace(/takleh/g,"tak boleh");
-text = text.replace(/sy/g,"saya");
-text = text.replace(/sya/g,"saya");
-text = text.replace(/nk/g,"nak");
-text = text.replace(/dkt/g,"dekat");
-text = text.replace(/pls/g,"tolong");
+    text = text.toLowerCase().trim();
 
-// Passport
-text = text.replace(/paspot/g,"passport");
-text = text.replace(/pasport/g,"passport");
+    // Buang tanda baca
+    text = text.replace(/[.,?!;:]/g, " ");
 
-// Booking
-text = text.replace(/booking/g,"tempahan");
-text = text.replace(/book/g,"tempahan");
+    // Betulkan ruang berlebihan
+    text = text.replace(/\s+/g, " ");
 
-// Walk In
-text = text.replace(/walk in/g,"walkin");
-text = text.replace(/drive in/g,"drivein");
+    // Bahasa ringkas / singkatan biasa
+    const replacements = {
 
-// Warga emas
-text = text.replace(/orang tua/g,"warga emas");
+        "xleh": "tak boleh",
+        "takleh": "tak boleh",
+        "x boleh": "tak boleh",
 
-// OKU
-text = text.replace(/disabled/g,"oku");
-text = text.replace(/cacat/g,"oku");
+        "sy": "saya",
+        "sya": "saya",
 
-// Hamil
-text = text.replace(/mengandung/g,"wanita hamil");
-// Salam
-if(text.includes("assalamualaikum") || q=="salam"){
+        "nk": "nak",
+        "dkt": "dekat",
+        "pls": "tolong",
 
-    return{
-        title:"Salam",
-        answer:`
-Waalaikumussalam 😊
+        "paspot": "pasport",
+        "passport": "pasport",
 
-Selamat datang ke MyPDT Smart AI.
+        "booking": "tempahan",
+        "book": "tempahan",
 
-Saya boleh membantu anda berkaitan:
+        "walk in": "walk-in",
+        "walkin": "walk-in",
 
-* Kelayakan
-* Dokumen
-* Waktu Operasi
-* Tempahan Slot
-* Drive-In
-* Walk-In
-* Hubungi Kami
+        "drive in": "drive-in",
+        "drivein": "drive-in",
 
-Sila taip soalan anda.
-`
+        "orang tua": "warga emas",
+
+        "disabled": "oku",
+        "cacat": "oku",
+
+        "mengandung": "wanita hamil",
+
+        "ic": "mykad"
     };
 
+
+    for (const phrase in replacements) {
+
+        const regex = new RegExp(
+            "\\b" + phrase.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\b",
+            "gi"
+        );
+
+        text = text.replace(regex, replacements[phrase]);
+    }
+
+
+    return text.trim();
 }
 
-// Hello
-if(text.includes("hello") || text.includes("hai") || text.includes("hi")){
 
-    return{
-        title:"Hello",
-        answer:`
-Hai 😊
 
-Saya ialah MyPDT Smart AI.
+// ==========================================================
+// 2. KIRA SKOR PADANAN KEYWORD
+// ==========================================================
 
-Apa yang ingin anda ketahui mengenai MyPassport Drive-In & Take?
-`
-    };
+function calculateScore(question, item) {
 
-}
+    let score = 0;
 
-// Terima kasih
-if(text.includes("terima kasih") || text.includes("thanks")){
+    const matchedKeywords = [];
 
-    return{
-        title:"Sama-sama",
-        answer:`
-😊 Sama-sama.
 
-Semoga urusan anda dipermudahkan.
+    for (const keyword of item.keywords) {
 
-Jika ada soalan lain mengenai MyPDT, sila tanya saya.
-`
-    };
+        const normalizedKeyword = normalizeText(keyword);
 
-}
-   if(text.includes("orang tua")){
-    text+=" warga emas";
-}
 
-if(text.includes("oku")){
-    text+=" orang kurang upaya";
-}
+        if (question.includes(normalizedKeyword)) {
 
-if(text.includes("mengandung")){
-    text+=" wanita hamil";
-}
+            const wordCount =
+                normalizedKeyword.split(/\s+/).length;
 
-if(text.includes("booking")){
-    text+=" tempahan";
-}
 
-if(text.includes("book")){
-    text+=" tempahan";
-}
-    // ==========================
-// Multi Topik
-// ==========================
+            // Frasa panjang mendapat skor lebih tinggi
+            if (wordCount >= 4) {
 
-let responses = [];
-let titles=[];
-let scores={};
-for(const key in knowledge){
+                score += 12;
 
-    const item = knowledge[key];
+            } else if (wordCount === 3) {
 
-    for(const keyword of item.keywords){
+                score += 9;
 
-        if(text.includes(keyword.toLowerCase())){
+            } else if (wordCount === 2) {
 
-            if(!responses.includes(item.answer)){
-                responses.push(item.answer);
-                scores[item.title] = (scores[item.title] || 0) + 1;
+                score += 6;
 
-if(!titles.includes(item.title)){
-    titles.push(item.title);
-}
+            } else {
 
-            break;
+                score += 3;
+            }
+
+
+            matchedKeywords.push(keyword);
         }
+    }
+
+
+    return {
+
+        score: score,
+
+        matchedKeywords: matchedKeywords
+    };
+}
+
+
+
+// ==========================================================
+// 3. PENGESAN UMUR DINAMIK
+// Contoh:
+// "Saya umur 61 tahun, layak tak?"
+// ==========================================================
+
+function detectAge(question) {
+
+    const ageMatch = question.match(
+        /(?:umur|usia)?\s*(\d{1,3})\s*(?:tahun)?/
+    );
+
+
+    if (!ageMatch) {
+
+        return null;
+    }
+
+
+    const age = parseInt(ageMatch[1]);
+
+
+    if (age < 0 || age > 120) {
+
+        return null;
+    }
+
+
+    return age;
+}
+
+
+
+// ==========================================================
+// 4. RESPONS KHAS BERDASARKAN UMUR
+// ==========================================================
+
+function generateAgeResponse(question) {
+
+    const age = detectAge(question);
+
+
+    if (age === null) {
+
+        return null;
+    }
+
+
+    const ageContext = [
+
+        "umur",
+        "usia",
+        "tahun",
+        "warga emas",
+        "layak",
+        "boleh guna",
+        "boleh tak",
+        "boleh ke"
+
+    ];
+
+
+    const hasAgeContext = ageContext.some(
+        keyword => question.includes(keyword)
+    );
+
+
+    if (!hasAgeContext) {
+
+        return null;
+    }
+
+
+    if (age >= 60) {
+
+        return {
+
+            title: "👴 Semakan Kelayakan Warga Emas",
+
+            answer: `
+✅ Ya. Individu berumur ${age} tahun layak menggunakan perkhidmatan MyPDT di bawah kategori Warga Emas kerana telah berumur 60 tahun atau ke atas.
+
+Sila pastikan dokumen yang diperlukan dibawa semasa hadir untuk pengambilan pasport.
+            `,
+
+            score: 100,
+
+            source: "Dynamic Age Reasoning"
+
+        };
 
     }
 
+
+    return {
+
+        title: "👤 Semakan Kelayakan Berdasarkan Umur",
+
+        answer: `
+Berdasarkan umur ${age} tahun, individu tersebut belum termasuk dalam kategori Warga Emas MyPDT yang ditetapkan pada umur 60 tahun dan ke atas.
+
+Walau bagaimanapun, individu tersebut masih boleh layak sekiranya tergolong dalam kategori lain:
+
+✅ Pemohon Online
+
+✅ Orang Kelainan Upaya (OKU)
+
+✅ Wanita Hamil
+
+✅ VIP
+        `,
+
+        score: 100,
+
+        source: "Dynamic Age Reasoning"
+
+    };
 }
 
-if(responses.length>1){
-titles.sort((a,b)=>(scores[b]||0)-(scores[a]||0));
-    return{
 
-title:titles.join(" • "),
 
-answer:responses.join("<hr>")
-};
+// ==========================================================
+// 5. MATCHING ENGINE UTAMA
+// ==========================================================
 
-}
-    for(const key in knowledge){
+function findAnswer(question) {
+
+    const text = normalizeText(question);
+
+
+    // Soalan kosong
+    if (!text) {
+
+        return {
+
+            title: "🤖 MyPDT Smart AI",
+
+            answer: `
+Sila taip soalan anda terlebih dahulu.
+
+Contoh:
+
+* Siapa yang layak menggunakan MyPDT?
+
+* Dokumen apa yang perlu dibawa?
+
+* Saya berumur 65 tahun. Adakah saya layak?
+
+* Perlukah saya membuat tempahan untuk Drive-In?
+            `,
+
+            score: 0,
+
+            source: "System"
+
+        };
+    }
+
+
+
+    // ======================================================
+    // 6. SEMAK RESPONS UMUR DINAMIK
+    // ======================================================
+
+    const ageResponse = generateAgeResponse(text);
+
+
+    if (ageResponse) {
+
+        return ageResponse;
+    }
+
+
+
+    // ======================================================
+    // 7. CARI DAN KIRA SEMUA PADANAN
+    // ======================================================
+
+    const matches = [];
+
+
+    for (const key in knowledge) {
 
         const item = knowledge[key];
 
-        for(const keyword of item.keywords){
+        const result = calculateScore(text, item);
 
-            if(text.includes(keyword.toLowerCase())){
 
-                return item;
+        if (result.score > 0) {
 
-            }
+            matches.push({
 
+                key: key,
+
+                title: item.title,
+
+                answer: item.answer,
+
+                score: result.score,
+
+                matchedKeywords:
+                    result.matchedKeywords,
+
+                source: "Knowledge Base"
+
+            });
         }
-
     }
 
-    return{
-        title:"Tidak Dijumpai",
-        answer:`
-❌ Maaf, saya tidak menemui jawapan untuk soalan tersebut.
 
-Sila cuba gunakan kata seperti:
 
-* layak
-* dokumen
-* waktu operasi
-* tempahan
-* QR
-* Drive-In
-* Walk-In
-* MyKad
-* Pasport
-`
-    };
+    // ======================================================
+    // 8. TIADA PADANAN
+    // ======================================================
 
+    if (matches.length === 0) {
+
+        return {
+
+            title: "🤖 MyPDT Smart AI",
+
+            answer: `
+Maaf, saya belum mempunyai jawapan khusus untuk soalan tersebut.
+
+Saya boleh membantu anda mengenai:
+
+👥 Kelayakan MyPDT
+
+📄 Dokumen yang diperlukan
+
+🕒 Waktu operasi
+
+🚗 Drive-In
+
+🚶 Walk-In
+
+📅 Tempahan slot
+
+📍 Lokasi MyPDT
+
+⏱️ Tempoh proses
+
+☎️ Maklumat untuk dihubungi
+
+Sila cuba tanya menggunakan ayat yang lebih khusus.
+            `,
+
+            score: 0,
+
+            source: "Fallback Response"
+
+        };
+    }
+
+
+
+    // ======================================================
+    // 9. SUSUN PADANAN MENGIKUT SKOR TERTINGGI
+    // ======================================================
+
+    matches.sort(
+        (a, b) => b.score - a.score
+    );
+
+
+    const bestMatch = matches[0];
+
+
+
+    // ======================================================
+    // 10. MULTI-TOPIC RESPONSE
+    // Hanya gabungkan topik yang mempunyai skor kukuh
+    // ======================================================
+
+    const strongMatches = matches.filter(
+        item =>
+            item.score >= 6 &&
+            item.score >= bestMatch.score * 0.7
+    );
+
+
+    if (strongMatches.length > 1) {
+
+        const selectedMatches =
+            strongMatches.slice(0, 3);
+
+
+        return {
+
+            title: selectedMatches
+                .map(item => item.title)
+                .join(" • "),
+
+            answer: selectedMatches
+                .map(item => item.answer)
+                .join("<hr>"),
+
+            score: bestMatch.score,
+
+            matchedKeywords: selectedMatches
+                .flatMap(item => item.matchedKeywords),
+
+            source: "Multi-Topic Matching Engine"
+
+        };
+    }
+
+
+
+    // ======================================================
+    // 11. PULANGKAN JAWAPAN TERBAIK
+    // ======================================================
+
+    return bestMatch;
 }
