@@ -755,16 +755,24 @@ Portal ini menyediakan maklumat mengenai kelayakan menggunakan kaunter MyPDT, ta
 
 <label><strong>Taip soalan anda:</strong></label>
 
-<input
-type="text"
+<textarea
 id="question"
-onkeypress="if(event.key==='Enter'){replyAI();}"
+rows="6"
 placeholder="Contoh: Siapa layak menggunakan MyPDT?"
-style="width:100%;
-padding:12px;
-margin-top:10px;
-border-radius:8px;
-border:1px solid #ccc;">
+style="
+width:100%;
+min-height:180px;
+padding:18px 20px;
+margin-top:12px;
+border-radius:12px;
+border:2px solid #d1d5db;
+font-family:Arial,sans-serif;
+font-size:18px;
+line-height:1.6;
+box-sizing:border-box;
+resize:vertical;
+outline:none;
+"></textarea>
 
 <br><br>
  
@@ -858,6 +866,20 @@ loading="lazy">
 </div>
 
 <script>
+ document.addEventListener("DOMContentLoaded", function () {
+
+    const questionBox = document.getElementById("question");
+
+    questionBox.addEventListener("keydown", function(event) {
+
+        if (event.key === "Enter" && !event.shiftKey) {
+            event.preventDefault();
+            replyAI();
+        }
+
+    });
+
+});
 function replyAI() {
 
     let q = document.getElementById("question").value.toLowerCase();
