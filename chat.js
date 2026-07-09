@@ -66,9 +66,9 @@ function replyMyPDT() {
             // 4. FORMAT JAWAPAN
             // ==================================================
 
-            const formattedAnswer = result.answer
-                .trim()
-                .replace(/\n/g, "<br>");
+            const formattedAnswer = String(result?.answer || "")
+    .trim()
+    .replace(/\n/g, "<br>");
 
 
             // ==================================================
