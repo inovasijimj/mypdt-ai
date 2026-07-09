@@ -1,4 +1,4 @@
-const knowledge = {
+window.knowledge = {
 
     // =====================================================
     // 1. MAKLUMAT UMUM MYPDT
