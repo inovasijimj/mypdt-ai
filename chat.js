@@ -132,8 +132,7 @@ function replyMyPDT() {
                     border-radius:10px;
                 ">
                     <b>⚠️ MyPDT Smart AI</b><br><br>
-                    Maaf, sistem tidak dapat memproses soalan anda pada masa ini.
-                    Sila cuba sekali lagi.
+                    Maaf, berlaku ralat: ${error.message}
                 </div>
             `;
         }
