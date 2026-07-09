@@ -777,7 +777,7 @@ outline:none;
 <br><br>
  
 <button
-onclick="replyAI()"
+onclick="replyMyPDT()"
 class="btn">
 
 🤖 Hantar Soalan
@@ -787,7 +787,7 @@ class="btn">
 <b>💡 Soalan Popular:</b><br><br>
 
 <button class="btn"
-onclick="document.getElementById('question').value='Siapa layak menggunakan MyPDT?';replyAI();">
+onclick="document.getElementById('question').value='Siapa layak menggunakan MyPDT?';replyMyPDT();">
 👥 Siapa layak?
 </button>
 
@@ -874,13 +874,13 @@ loading="lazy">
 
         if (event.key === "Enter" && !event.shiftKey) {
             event.preventDefault();
-            replyAI();
+            replyMyPDT();
         }
 
     });
 
 });
-function replyAI() {
+function replyMyPDT() {
 
     let q = document.getElementById("question").value.toLowerCase();
     let answer = "";
