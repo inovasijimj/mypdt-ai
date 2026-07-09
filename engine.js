@@ -255,6 +255,7 @@ Walau bagaimanapun, individu tersebut masih boleh layak sekiranya tergolong dala
 function findAnswer(question) {
 
     const text = normalizeText(question);
+    const isEnglish = /\b(who|what|where|when|why|how|can|is|are|do|does|eligible|document|documents|time|location|booking|appointment|passport|drive|walk)\b/i.test(question);
 
 
     // Soalan kosong
@@ -318,20 +319,12 @@ Contoh:
         if (result.score > 0) {
 
             matches.push({
-
                 key: key,
-
                 title: item.title,
-
-                answer: item.answer,
-
+                answer: isEnglish && item.answer_en ? item.answer_en : item.answer,
                 score: result.score,
-
-                matchedKeywords:
-                    result.matchedKeywords,
-
+                matchedKeywords: result.matchedKeywords,
                 source: "Knowledge Base"
-
             });
         }
     }
