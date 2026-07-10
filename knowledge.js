@@ -632,30 +632,53 @@ inovasi.jimj@imi.gov.my
     },
 
 
-    // =====================================================
-    // 21. UCAPAN SALAM
-    // =====================================================
-    salam: {
-        title: "👋 Salam",
+// =====================================================
+// 21. UCAPAN ASSALAMUALAIKUM
+// =====================================================
+assalamualaikum: {
+    title: "👋 Salam",
 
-        keywords: [
-            "hai",
-            "hi",
-            "hello",
-            "helo",
-            "assalamualaikum",
-            "salam",
-            "selamat pagi",
-            "selamat petang",
-            "selamat malam"
-        ],
+    keywords: [
+        "assalamualaikum",
+        "assalamualaikum wrt",
+        "assalamualaikum wbt"
+    ],
 
-        answer: `
-👋 Salam sejahtera dan selamat datang ke MyPDT Smart AI Assistant.
+    answer: `
+👋 Waalaikumussalam wbt.
+
+Selamat datang ke MyPDT Smart AI Assistant.
 
 Saya boleh membantu anda mendapatkan maklumat mengenai kelayakan, dokumen, waktu operasi, tempahan slot, lokasi dan perkhidmatan MyPDT.
-        `
-    },
+    `
+},
+
+
+// =====================================================
+// 22. UCAPAN SALAM BIASA
+// =====================================================
+salam: {
+    title: "👋 Salam Sejahtera",
+
+    keywords: [
+        "hai",
+        "hi",
+        "hello",
+        "helo",
+        "salam",
+        "selamat pagi",
+        "selamat petang",
+        "selamat malam"
+    ],
+
+    answer: `
+👋 Salam Sejahtera!
+
+Selamat datang ke MyPDT Smart AI Assistant.
+
+Saya boleh membantu anda mendapatkan maklumat mengenai kelayakan, dokumen, waktu operasi, tempahan slot, lokasi dan perkhidmatan MyPDT.
+    `
+},
 
 
     // =====================================================
