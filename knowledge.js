@@ -76,15 +76,11 @@ Ia merupakan projek inovasi Jabatan Imigresen Malaysia Negeri Johor yang menyedi
         answer: `
 👥 Perkhidmatan MyPDT disediakan kepada lima golongan sasar:
 
-✅ Warga Emas berumur 60 tahun dan ke atas
-
-✅ Orang Kelainan Upaya (OKU)
-
-✅ Wanita Hamil
-
-✅ Pemohon Online
-
-✅ VIP
+    ✅ Warga Emas berumur 60 tahun dan ke atas
+    ✅ Orang Kelainan Upaya (OKU)
+    ✅ Wanita Hamil
+    ✅ Pemohon Online
+    ✅ VIP
 
 Pemohon yang tergolong dalam sekurang-kurangnya satu kategori tersebut layak menggunakan perkhidmatan MyPDT.
     `,
@@ -92,15 +88,11 @@ Pemohon yang tergolong dalam sekurang-kurangnya satu kategori tersebut layak men
 answer_en: `
 👥 MyPDT services are available to five target groups:
 
-✅ Senior Citizens aged 60 years and above
-
-✅ Persons with Disabilities (OKU)
-
-✅ Pregnant Women
-
-✅ Online Applicants
-
-✅ VIPs
+    ✅ Senior Citizens aged 60 years and above
+    ✅ Persons with Disabilities (OKU)
+    ✅ Pregnant Women
+    ✅ Online Applicants
+    ✅ VIPs
 
 Applicants who belong to at least one of these categories are eligible to use the MyPDT service.
 `
@@ -260,13 +252,10 @@ Perkhidmatan ini membantu memberikan pengalaman pengambilan pasport yang lebih m
         answer: `
 📄 Dokumen yang perlu dibawa semasa hadir ke MyPDT ialah:
 
-✅ MyKad
-
-✅ Pasport Lama
-
-✅ Resit Bayaran
-
-✅ Dokumen Sokongan, jika berkaitan
+        ✅ MyKad
+        ✅ Pasport Lama
+        ✅ Resit Bayaran
+        ✅ Dokumen Sokongan, jika berkaitan
 
 ⚠️ Kegagalan membawa dokumen yang diperlukan boleh menyebabkan urusan pengambilan pasport tidak dapat diproses.
         `
@@ -321,7 +310,7 @@ Isnin hingga Rabu
 
 ❌ DITUTUP
 
-Khamis hingga Ahad dan Cuti Umum.
+***Khamis hingga Ahad dan Cuti Umum.
         `
     },
 
