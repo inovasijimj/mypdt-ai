@@ -294,18 +294,14 @@ Perkhidmatan ini membantu memberikan pengalaman pengambilan pasport yang lebih m
 🚗 DRIVE-IN
 
 Isnin hingga Rabu
-
 10.00 pagi – 1.00 tengah hari
-
 2.30 petang – 4.00 petang
 
 
 🚶 WALK-IN
 
 Isnin hingga Rabu
-
 9.00 pagi – 1.00 tengah hari
-
 2.30 petang – 4.00 petang
 
 ❌ DITUTUP
