@@ -655,8 +655,6 @@ salam: {
     ],
 
     answer: `
-👋 Salam Sejahtera!
-
 Selamat datang ke MyPDT Smart AI Assistant.
 
 Saya boleh membantu anda mendapatkan maklumat mengenai kelayakan, dokumen, waktu operasi, tempahan slot, lokasi dan perkhidmatan MyPDT.
