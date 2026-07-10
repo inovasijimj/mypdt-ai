@@ -619,7 +619,7 @@ inovasi.jimj@imi.gov.my
 // 21. UCAPAN ASSALAMUALAIKUM
 // =====================================================
 assalamualaikum: {
-    title: "👋 Salam",
+    title: "",
 
     keywords: [
         "assalamualaikum",
