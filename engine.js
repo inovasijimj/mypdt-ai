@@ -388,47 +388,6 @@ Sila cuba tanya menggunakan ayat yang lebih khusus.
     const bestMatch = matches[0];
 
 
-
-    // ======================================================
-    // 10. MULTI-TOPIC RESPONSE
-    // Hanya gabungkan topik yang mempunyai skor kukuh
-    // ======================================================
-
-    const strongMatches = matches.filter(
-        item =>
-            item.score >= 6 &&
-            item.score >= bestMatch.score * 0.7
-    );
-
-
-    if (strongMatches.length > 1) {
-
-        const selectedMatches =
-            strongMatches.slice(0, 3);
-
-
-        return {
-
-            title: selectedMatches
-                .map(item => item.title)
-                .join(" • "),
-
-            answer: selectedMatches
-                .map(item => item.answer)
-                .join("<hr>"),
-
-            score: bestMatch.score,
-
-            matchedKeywords: selectedMatches
-                .flatMap(item => item.matchedKeywords),
-
-            source: "Multi-Topic Matching Engine"
-
-        };
-    }
-
-
-
     // ======================================================
     // 11. PULANGKAN JAWAPAN TERBAIK
     // ======================================================
