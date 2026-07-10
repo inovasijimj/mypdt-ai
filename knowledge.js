@@ -157,7 +157,7 @@ Sila bawa dokumen yang diperlukan semasa hadir untuk pengambilan pasport.
         answer: `
 ♿ Orang Kelainan Upaya (OKU) merupakan salah satu golongan sasar yang layak menggunakan perkhidmatan MyPDT.
 
-Sila bawa dokumen yang diperlukan serta dokumen sokongan jika berkaitan.
+Sila bawa dokumen yang diperlukan serta dokumen sokongan (kad oku) jika berkaitan.
         `
     },
 
@@ -302,15 +302,6 @@ Perkhidmatan ini membantu memberikan pengalaman pengambilan pasport yang lebih m
         answer: `
 🕒 Waktu Operasi MyPDT
 
-🚶 WALK-IN
-
-Isnin hingga Rabu
-
-9.00 pagi – 1.00 tengah hari
-
-2.30 petang – 4.00 petang
-
-
 🚗 DRIVE-IN
 
 Isnin hingga Rabu
@@ -319,6 +310,14 @@ Isnin hingga Rabu
 
 2.30 petang – 4.00 petang
 
+
+🚶 WALK-IN
+
+Isnin hingga Rabu
+
+9.00 pagi – 1.00 tengah hari
+
+2.30 petang – 4.00 petang
 
 ❌ DITUTUP
 
