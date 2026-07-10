@@ -289,8 +289,6 @@ Perkhidmatan ini membantu memberikan pengalaman pengambilan pasport yang lebih m
         ],
 
         answer: `
-🕒 Waktu Operasi MyPDT
-
 🚗 DRIVE-IN
 
 Isnin hingga Rabu
@@ -634,7 +632,7 @@ assalamualaikum: {
 
 Selamat datang ke MyPDT Smart AI Assistant.
 
-Saya boleh membantu anda mendapatkan maklumat mengenai kelayakan, dokumen, waktu operasi, tempahan slot, lokasi dan perkhidmatan MyPDT.
+Saya boleh membantu anda mendapatkan maklumat berkenaan perkhidmatan MyPDT.
     `
 },
 
