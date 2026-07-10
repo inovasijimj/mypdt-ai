@@ -604,10 +604,10 @@ Bagi sebarang keperluan khusus berkaitan jenis kenderaan atau nombor pendaftaran
         ],
 
         answer: `
-☎️ Jabatan Imigresen Malaysia Negeri Johor
+☎️ Hubungi kami:
 
-Telefon: 07-2338510
-        `
+No. Telefon: 07-2338510
+       `
     },
 
 
