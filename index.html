@@ -900,6 +900,187 @@ width:180px;
 }
 
 }
+/*======================================================
+INFO GRID
+======================================================*/
+
+.info-section{
+
+padding:70px 0;
+
+}
+
+.info-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+
+gap:30px;
+
+}
+
+.info-card{
+
+background:#fff;
+
+border-radius:22px;
+
+padding:30px;
+
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+transition:.35s;
+
+}
+
+.info-card:hover{
+
+transform:translateY(-6px);
+
+}
+
+.info-card h2{
+
+color:#0b3768;
+
+font-size:28px;
+
+margin-bottom:20px;
+
+}
+
+.info-card ul{
+
+padding-left:22px;
+
+line-height:2;
+
+color:#555;
+
+}
+
+.info-card table{
+
+width:100%;
+
+border-collapse:collapse;
+
+margin-top:15px;
+
+}
+
+.info-card table td{
+
+padding:12px;
+
+border-bottom:1px solid #eee;
+
+}
+
+.drive-btn{
+
+margin-top:25px;
+
+display:inline-block;
+
+} 
+
+/*======================================================
+FAQ + HUBUNGI + FOOTER
+======================================================*/
+
+.faq-section,
+.contact-section{
+
+padding:70px 0;
+
+}
+
+.faq-title,
+.contact-title{
+
+font-size:36px;
+
+text-align:center;
+
+margin-bottom:35px;
+
+color:#0b3768;
+
+}
+
+.faq-item{
+
+background:#fff;
+
+border-radius:15px;
+
+padding:22px;
+
+margin-bottom:18px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.faq-item h3{
+
+color:#0b3768;
+
+margin-bottom:10px;
+
+}
+
+.contact-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+}
+
+.contact-card{
+
+background:white;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.contact-card h3{
+
+color:#0b3768;
+
+margin-bottom:15px;
+
+}
+
+.footer{
+
+background:#0b3768;
+
+color:white;
+
+text-align:center;
+
+padding:30px;
+
+margin-top:60px;
+
+}
+
+.footer p{
+
+margin:6px 0;
+
+}
  
 </style>
 
@@ -959,8 +1140,6 @@ onclick="toggleMenu()">
 </div>
 
 </header>
-
-
 
 <!-- ======================================================
 HERO
@@ -1405,3 +1584,338 @@ Pembantu maya Jabatan Imigresen Malaysia Negeri Johor.
 </div>
 
 </section>
+
+<!-- ======================================================
+DOKUMEN
+====================================================== -->
+
+<section
+class="info-section"
+id="dokumen">
+
+<div class="container">
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<h2>
+
+📄 Dokumen Diperlukan
+
+</h2>
+
+<ul>
+
+<li>MyKad Pemohon</li>
+
+<li>Pasport Malaysia Lama</li>
+
+<li>Resit Bayaran</li>
+
+<li>Slip Temujanji (jika berkaitan)</li>
+
+<li>Dokumen Sokongan (jika diperlukan)</li>
+
+</ul>
+
+</div>
+
+
+
+<div
+class="info-card"
+id="operasi">
+
+<h2>
+
+🕒 Waktu Operasi
+
+</h2>
+
+<table>
+
+<tr>
+
+<td>Isnin - Rabu</td>
+
+<td>9.00 pagi - 1.00 petang</td>
+
+</tr>
+
+<tr>
+
+<td></td>
+
+<td>2.30 petang - 4.00 petang</td>
+
+</tr>
+
+<tr>
+
+<td>Khamis - Jumaat</td>
+
+<td>Kaunter Aras 3</td>
+
+</tr>
+
+<tr>
+
+<td>Sabtu & Ahad</td>
+
+<td>Tutup</td>
+
+</tr>
+
+<tr>
+
+<td>Cuti Umum</td>
+
+<td>Tutup</td>
+
+</tr>
+
+</table>
+
+</div>
+
+
+
+<div
+class="info-card"
+id="drivein">
+
+<h2>
+
+🚗 Tempahan Drive-In
+
+</h2>
+
+<p>
+
+Perkhidmatan Drive-In disediakan
+kepada kumpulan sasaran
+yang layak menggunakan
+MyPassport Drive-In & Take.
+
+</p>
+
+<br>
+
+<p>
+
+Klik butang di bawah
+untuk membuat tempahan.
+
+</p>
+
+<a
+
+href="https://forms.gle/"
+
+target="_blank"
+
+class="btn btn-green drive-btn">
+
+🚗 Tempah Sekarang
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================================
+FAQ
+====================================================== -->
+
+<section
+class="faq-section"
+id="faq">
+
+<div class="container">
+
+<h2 class="faq-title">
+
+❓ Soalan Lazim
+
+</h2>
+
+<div class="faq-item">
+
+<h3>Siapa yang boleh menggunakan MyPDT?</h3>
+
+<p>
+
+Pemohon Online, OKU, Warga Emas,
+Wanita Hamil dan VIP.
+
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>Adakah perlu membuat tempahan?</h3>
+
+<p>
+
+Ya. Perkhidmatan Drive-In
+memerlukan tempahan slot.
+
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>Berapa lama proses pengambilan?</h3>
+
+<p>
+
+Lebih kurang 10 minit.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ======================================================
+HUBUNGI
+====================================================== -->
+
+<section
+class="contact-section"
+id="hubungi">
+
+<div class="container">
+
+<h2 class="contact-title">
+
+☎️ Hubungi Kami
+
+</h2>
+
+<div class="contact-grid">
+
+<div class="contact-card">
+
+<h3>
+
+📍 Alamat
+
+</h3>
+
+<p>
+
+Jabatan Imigresen Malaysia Negeri Johor
+
+KDN Setia Tropika
+
+Johor Bahru
+
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<h3>
+
+☎️ Telefon
+
+</h3>
+
+<p>
+
+07-2338510
+
+</p>
+
+<br>
+
+<h3>
+
+📧 Email
+
+</h3>
+
+<p>
+
+mypdt@imi.gov.my
+
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<h3>
+
+🕘 Waktu Operasi
+
+</h3>
+
+<p>
+
+Isnin–Rabu
+
+9.00 pagi – 4.00 petang
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<footer class="footer">
+
+<p>
+
+© 2026
+
+Jabatan Imigresen Malaysia Negeri Johor
+
+</p>
+
+<p>
+
+Portal MyPassport Drive-In & Take (MyPDT)
+
+</p>
+
+</footer>
+<script src="knowledge.js"></script>
+
+<script src="engine.js"></script>
+
+<script src="chat.js"></script>
+
+<script>
+
+function toggleMenu(){
+
+document.getElementById("navMenu").classList.toggle("show");
+
+}
+
+</script>
+
+</body>
+
+</html>
