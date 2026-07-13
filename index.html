@@ -808,7 +808,9 @@ font-weight:700;
 
 .chat-window{
 
-height:320px;
+min-height:100px;
+
+max-height:180px;
 
 overflow-y:auto;
 
@@ -859,6 +861,8 @@ gap:12px;
 .chat-input input{
 
 flex:1;
+
+height:55px;
 
 padding:16px;
 
@@ -1575,12 +1579,10 @@ Selamat datang ke Portal MyPDT. Saya sedia membantu anda.
 <div class="chat-input">
 
 <input
-
 type="text"
-
 id="userInput"
-
-placeholder="Taip soalan anda...">
+placeholder="Taip soalan anda..."
+onkeypress="if(event.key==='Enter'){sendMessage();}">
 
 <button onclick="sendMessage()">
 
@@ -1741,10 +1743,6 @@ id="operasi">
 <p>
 
 Perkhidmatan Drive-In disediakan kepada golongan yang layak sahaja.
-
-<br>
-
-<p>
 
 Sila imbas QR Code di bawah untuk membuat tempahan slot.
 
