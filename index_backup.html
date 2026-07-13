@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyPDT Smart AI Assistant</title>
+
+<style>
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:#eef3f8;
+}
+header{
+ background:#0b3768;
+ color:white;
+ text-align:center;
+ padding:40px 20px;
+}
+.container{
+ max-width:1500px;
+ margin:auto;
+ padding:20px;
+}
+.banner{
+    width:100%;
+    max-width:1100px;
+    height:auto;
+    display:block;
+    margin:5px auto;
+    border-radius:12px;
+    object-fit:contain;
+}
+.card{
+    background:white;
+    border-radius:18px;
+    padding:28px;
+    margin-bottom:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:.3s;
+}
+.card h2{
+    font-size:42px;
+    color:#0b3768;
+    margin-bottom:15px;
+} 
+.btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+
+background:#0d6efd;
+color:white;
+
+padding:16px 30px;
+font-size:18px;
+font-weight:700;
+
+border-radius:12px;
+text-decoration:none;
+
+transition:.3s;
+box-shadow:0 8px 20px rgba(0,0,0,.18);
+}
+
+.btn:hover{
+background:#084298;
+transform:translateY(-3px);
+box-shadow:0 12px 30px rgba(0,0,0,.25);
+}
+
+.btn-green{
+background:#1bb55c;
+}
+
+.btn-green:hover{
+background:#149648;
+}
+.topbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+}
+
+.logo{
+
+font-size:30px;
+
+font-weight:bold;
+
+color:white;
+
+}
+
+.logo span{
+
+font-size:34px;
+
+}
+
+nav{
+
+display:flex;
+
+gap:18px;
+
+flex-wrap:wrap;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+padding:10px 15px;
+
+border-radius:8px;
+
+transition:0.3s;
+
+}
+
+nav a:hover{
+
+background:white;
+
+color:#0b3768;
+
+}
+.services{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+}
+
+.service-card{
+background:#fff;
+padding:30px;
+border-radius:18px;
+min-height:220px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+transition:.3s;
+
+}
+
+.service-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 12px 25px rgba(0,0,0,.18);
+
+}
+
+.service-card h3{
+font-size:28px;
+margin:15px 0;
+font-weight:700;
+color:#22356f;
+}
+
+.service-card p{
+font-size:17px;
+line-height:1.7;
+color:#555;
+}
+
+.icon{
+
+font-size:60px;
+margin-bottom:18px;
+display:block;
+}
+
+/* ===== INFO GRID ===== */
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+    margin:35px 0;
+}
+
+.info-card{
+    background:#fff;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+ 
+    display:flex;
+    flex-direction:column;
+}
+
+.info-card h2{
+    color:#0b3768;
+    margin-bottom:20px;
+}
+
+.info-card ul{
+    padding-left:20px;
+    line-height:2;
+}
+
+.green-box,
+.blue-box,
+.red-box,
+.success-box{
+    padding:15px;
+    border-radius:12px;
+    margin-top:10px;
+}
+
+.green-box{
+    background:#e8f8ec;
+}
+
+.blue-box{
+    background:#eaf4ff;
+}
+
+.red-box{
+    background:#fdeaea;
+}
+
+.success-box{
+    background:#e8fff2;
+    border-left:5px solid #16a34a;
+}
+
+.info-card img{
+    width:220px;
+    border-radius:12px;
+}
+
+.info-card .btn{
+    display:block;
+    text-align:center;
+}
+ 
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.service-card{
+    background:#ffffff;
+    border-radius:20px;
+    padding:28px;
+    text-align:center;
+    border:1px solid #eef2f7;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:all .3s ease;
+    min-height:240px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+    color:inherit;
+}
+.blue{background:#eef6ff;}
+.green{background:#eefbf2;}
+.purple{background:#f5efff;}
+.orange{background:#fff4e8;}
+.yellow{background:#fffbe8;}
+
+.service-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
+}
+
+.icon{
+    font-size:58px;
+    margin-bottom:18px;
+    display:block;
+}
+
+.menu-toggle{
+    display:none;
+    font-size:32px;
+    color:white;
+    cursor:pointer;
+}
+ 
+/* ===== Paparan Telefon ===== */
+
+@media (max-width:768px){
+
+header{
+    padding:25px 15px;
+}
+
+.container{
+    padding:10px;
+}
+
+.topbar{
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
+    position:relative;
+}
+.menu-toggle{
+    display:block;
+    position:absolute;
+    top:15px;
+    right:20px;
+    font-size:32px;
+    color:white;
+    cursor:pointer;
+    z-index:9999;
+}
+nav{
+    display:none;
+    width:100%;
+}
+
+nav.active{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+nav a{
+    display:block;
+    width:100%;
+    text-align:center;
+    margin:4px;
+    font-size:14px;
+}
+
+.hero-text h1{
+    font-size:30px;
+}
+
+.hero-text p{
+    font-size:16px;
+}
+
+.services{
+    grid-template-columns:1fr;
+}
+
+.info-grid{
+    grid-template-columns:1fr;
+}
+
+.service-card{
+    min-height:auto;
+}
+
+.card{
+    padding:18px;
+}
+
+.banner{
+    width:100%;
+}
+
+iframe{
+    width:100%;
+    height:250px;
+}
+
+.footer{
+    padding:20px 15px;
+    font-size:14px;
+}
+
+#topBtn{
+    right:18px;
+    bottom:35px;
+}
+}
+
+.hero{
+
+background:url("Bangunan.jpeg") center center;
+
+background-size:cover;
+
+background-repeat:no-repeat;
+
+min-height:700px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+position:relative;
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(255,255,255,.45);
+
+backdrop-filter:blur(2px);
+
+}
+
+.hero-overlay{
+
+position:relative;
+
+z-index:2;
+
+text-align:center;
+
+max-width:700px;
+
+padding:30px;
+
+}
+
+.hero-logo{
+
+width:110px;
+
+margin-bottom:20px;
+
+}
+
+.hero h3{
+
+font-size:38px;
+
+color:#002060;
+
+margin-bottom:5px;
+
+}
+
+.hero h1{
+
+font-size:74px;
+
+font-weight:800;
+
+color:#001b5e;
+
+margin:0;
+
+}
+
+.hero p{
+
+font-size:26px;
+
+line-height:1.7;
+
+color:#222;
+
+margin:25px 0 35px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+.hero-logo{
+
+width:90px;
+
+margin-bottom:15px;
+
+}
+
+.hero h1{
+
+font-size:55px;
+
+margin:0;
+
+font-weight:bold;
+
+}
+
+.hero h3{
+
+font-size:30px;
+
+margin-bottom:10px;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+line-height:1.8;
+
+margin:30px 0;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+gap:15px;
+
+}
+
+.btn-green{
+
+background:#1bb55c;
+
+}
+
+.hero-left{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.hero-right{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-buttons .btn{
+    padding:14px 24px;
+    border-radius:10px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+.hero-buttons .btn:first-child{
+    background:#2563eb;
+}
+
+.hero-buttons .btn-green{
+    background:#16a34a;
+}
+
+.hero-text{
+    flex:0.9;
+}
+
+.hero-text h1{
+
+font-size:58px;
+
+line-height:1.2;
+
+margin-bottom:20px;
+
+}
+
+.hero-text p{
+
+font-size:24px;
+
+line-height:1.8;
+
+max-width:650px;
+
+}
+
+.hero-image{
+    flex:1.4;
+    text-align:center;
+}
+
+.hero-image img{
+   width:100%;
+   max-width:700px;
+   height:auto;
+   filter:drop-shadow(0 10px 25px rgba(0,0,0,.35));
+}
+
+@media(max-width:768px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:34px;
+}
+
+.hero-text p{
+    font-size:17px;
+}
+
+}
+ .footer{
+    background:#0b2f6b;
+    color:#fff;
+    text-align:center;
+    padding:40px 20px;
+    margin-top:50px;
+}
+
+.footer h3{
+    margin-bottom:10px;
+    font-size:24px;
+}
+
+.footer p{
+    margin:8px 0;
+    line-height:1.8;
+}
+
+.footer hr{
+    width:70%;
+    margin:20px auto;
+    border:none;
+    border-top:1px solid rgba(255,255,255,.3);
+}
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    border: none;
+    outline: none;
+    background: #0b2f6b;
+    color: white;
+    cursor: pointer;
+    padding: 14px 18px;
+    border-radius: 50%;
+    font-size: 22px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.25);
+    transition: .3s;
+}
+
+#topBtn:hover{
+    background:#174ea6;
+    transform:translateY(-3px);
+}
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="topbar">
+
+<div class="logo">
+🤖 <span>Portal MyPDT (MyPassport Drive-In & Take)</span>
+</div>
+
+<div class="menu-toggle" onclick="toggleMenu()">
+☰
+</div>
+
+<nav id="navMenu">
+
+<a href="#utama">🏠 Utama</a>
+
+<a href="#chat">💬 Chat AI</a>
+
+<a href="#dokumen">📄 Dokumen</a>
+
+<a href="#drivein">🚗 Drive-In</a>
+
+<a href="#operasi">🚶 Walk-In</a>
+
+<a href="#faq">❓ FAQ</a>
+
+<a href="#hubungi">📞 Hubungi Kami</a>
+
+</nav>
+
+</div>
+
+</header>
+ <section class="hero" id="utama">
+
+<div class="hero-card">
+
+<div class="hero-left">
+
+<img src="logoJIM.png" class="hero-logo">
+
+<h3>Selamat Datang ke</h3>
+
+<h1>PORTAL MyPDT</h1>
+
+<p>
+MyPDT merupakan inisiatif Jabatan Imigresen Malaysia Negeri Johor
+bagi memudahkan proses penyerahan pasport kepada golongan sasaran.
+Portal ini menyediakan maklumat dengan sokongan interaktif
+MyPDT Smart AI Assistant.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#chat" class="btn">
+🤖 Tanya MyPDT AI
+</a>
+
+<a href="#drivein"
+class="btn btn-green">
+🚗 Tempah Slot Drive-In
+</a>
+
+</div>
+<section class="hero" id="utama">
+
+<div class="hero-overlay">
+
+<img src="logoJIM.png" class="hero-logo">
+
+<h3>Selamat Datang ke</h3>
+
+<h1>PORTAL MyPDT</h1>
+
+<p>
+MyPDT merupakan inisiatif Jabatan Imigresen Malaysia Negeri Johor
+bagi memudahkan proses penyerahan pasport kepada golongan sasaran.
+Portal ini menyediakan maklumat dengan sokongan interaktif
+MyPDT Smart AI Assistant.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#chat" class="btn">
+💬 Tanya MyPDT AI
+</a>
+
+<a href="#drivein" class="btn btn-green">
+🚗 Tempah Slot Drive-In
+</a>
+
+</div>
+
+</div>
+
+</section>
+</div>
+
+<div class="hero-right">
+
+<img src="Bangunan.jpeg">
+
+</div>
+
+</div>
+
+</section>
+
+<div class="card">
+<h2 style="font-size:36px;font-weight:700;color:#22356f;margin-bottom:25px;">
+📋 Pilih Perkhidmatan
+</h2>
+
+<div class="services">
+
+<a href="#chat" class="service-card blue">
+<div class="icon">💬</div>
+<h3>AI ChatBot</h3>
+<p>Tanya apa sahaja mengenai MyPDT.</p>
+</a>
+
+<a href="#dokumen" class="service-card green">
+<div class="icon">📄</div>
+<h3>Dokumen</h3>
+<p>Semak dokumen yang perlu dibawa.</p>
+</a>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdfxDUEbE_dkO1pQCH_Z2T3MSlkYPTZjYuUQwatgzFWmFc1KQ/viewform?usp=header"
+target="_blank"
+class="service-card purple">
+<div class="icon">🚗</div>
+<h3>Drive-In</h3>
+<p>Maklumat lengkap perkhidmatan Drive-In.</p>
+</a>
+
+<a href="#operasi" class="service-card orange">
+<div class="icon">🚶</div>
+<h3>Walk-In</h3>
+<p>Maklumat lengkap perkhidmatan Walk-In.</p>
+</a>
+
+<a href="#faq" class="service-card yellow">
+<div class="icon">❓</div>
+<h3>FAQ</h3>
+<p>Soalan lazim mengenai MyPDT.</p>
+</a>
+
+</div>
+<div class="info-grid">
+
+<div class="info-card" id="dokumen">
+<h2>👥 Golongan Yang Layak</h2>
+
+<ul>
+<li>👴 Warga Emas (60 Tahun Ke atas)</li>
+<li>♿ Orang Kelainan Upaya (OKU)</li>
+<li>🤰 Wanita Hamil</li>
+<li>💻 Pemohon Online</li>
+<li>⭐ VIP</li>
+
+</ul>
+
+<div class="success-box">
+
+✅ <b>Jika anda tergolong dalam salah satu kategori di atas, anda layak menggunakan perkhidmatan MyPDT.</b>
+
+<br><br>
+
+<b>📄 Pemohon yang layak menggunakan perkhidmatan MyPDT hendaklah membawa dokumen berikut semasa hadir ke kaunter:</b>
+
+<ul style="margin-top:12px; line-height:1.8;">
+    <li>🪪 MyKad</li>
+    <li>📘 Pasport Lama</li>
+    <li>🧾 Resit Bayaran</li>
+    <li>🧾 Dokumen sokongan (jika berkaitan)</li>  
+    </ul>
+
+<p style="margin-top:12px; color:#b45309;">
+<b>⚠️ Kegagalan membawa dokumen yang diperlukan boleh menyebabkan urusan pengambilan pasport tidak dapat diproses.</b>
+</p>
+
+</div>
+
+</div>
+
+<div class="info-card" id="operasi">
+
+<h2>🕒 Waktu Operasi</h2>
+
+<div class="green-box">
+
+<b>DRIVE-IN</b><br><br>
+
+Isnin - Rabu<br>
+
+10.00 pagi - 1.00 tengah hari<br>
+
+2.30 petang - 4.00 petang
+
+</div>
+
+<br>
+
+<div class="blue-box">
+ 
+<b>WALK-IN</b><br><br>
+
+Isnin - Rabu<br>
+
+9.00 pagi - 1.00 tengah hari<br>
+
+2.30 petang - 4.00 petang
+
+</div>
+
+<br>
+ 
+<div class="red-box">
+
+Ditutup:
+Khamis hingga Ahad
+dan Cuti Umum.
+
+</div>
+
+</div>
+
+<div class="info-card" id="drivein">
+
+<h2>📅 Tempahan Drive-In</h2>
+
+<p>
+
+Sila imbas QR Code di bawah untuk membuat tempahan slot.
+
+</p>
+
+<div style="text-align:center;">
+
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://docs.google.com/forms/d/e/1FAIpQLSdfxDUEbE_dkO1pQCH_Z2T3MSlkYPTZjYuUQwatgzFWmFc1KQ/viewform?usp=header">
+
+</div>
+
+<br>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdfxDUEbE_dkO1pQCH_Z2T3MSlkYPTZjYuUQwatgzFWmFc1KQ/viewform?usp=header"
+target="_blank"
+class="btn">
+📅 Tempah Slot
+</a>
+</p>
+
+</div>
+
+</div>
+<div class="card" id="faq">
+<h2>❓ Soalan Lazim (FAQ)</h2>
+
+<p><b>Siapa layak menggunakan MyPDT?</b></p>
+<p> Warga Emas, OKU, Wanita Hamil, Pemohon Online, dan VIP.</p>
+
+<p><b>Perlu tempahan?</b></p>
+<p>Ya, untuk Drive-In sahaja.</p>
+
+<p><b>Berapa lama proses?</b></p>
+<p>Lebih kurang 10 minit.</p>
+</div> 
+<div class="card" id="chat">
+<h2>🤖 MyPDT AI Chatbot</h2>
+
+ <p>
+MyPDT AI Chatbot merupakan Smart Assistant bagi pencarian sebarang pertanyaan berkenaan MyPDT.
+ </p>
+
+ <hr>
+
+<div style="margin-top:20px;">
+
+<label><strong>Taip soalan anda:</strong></label>
+
+<textarea
+id="question"
+rows="6"
+placeholder="Contoh: Siapa layak menggunakan MyPDT?"
+style="
+width:100%;
+min-height:180px;
+padding:18px 20px;
+margin-top:12px;
+border-radius:12px;
+border:2px solid #d1d5db;
+font-family:Arial,sans-serif;
+font-size:18px;
+line-height:1.6;
+box-sizing:border-box;
+resize:vertical;
+outline:none;
+"></textarea>
+
+<br><br>
+ 
+<button
+onclick="replyMyPDT()"
+class="btn">
+
+🤖 Hantar Soalan
+
+</button>
+<div style="margin-top:20px;">
+<b>💡 Soalan Popular:</b><br><br>
+
+<button class="btn"
+onclick="document.getElementById('question').value='Siapa layak menggunakan MyPDT?';replyMyPDT();">
+👥 Siapa layak?
+</button>
+
+<button class="btn"
+onclick="document.getElementById('question').value='Dokumen apa yang perlu dibawa';replyMyPDT();">
+📄 Dokumen
+</button>
+
+<button class="btn"
+onclick="document.getElementById('question').value='Waktu operasi';replyMyPDT();">
+🕒 Waktu Operasi
+</button>
+
+<button class="btn"
+onclick="document.getElementById('question').value='Bagaimana tempah slot';replyMyPDT();">
+📅 Tempah Slot
+</button>
+
+<button class="btn"
+onclick="document.getElementById('answer').innerHTML='📞 Kami boleh dihubungi melalui maklumat seperti yang tertera di bawah.';">
+📞 Hubungi Kami
+</button>
+
+</div>
+<br><br>
+
+<div id="answer"
+style="
+background:#eef6ff;
+padding:15px;
+border-radius:10px;
+font-weight:bold;">
+
+Jawapan AI akan dipaparkan di sini.
+
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<div id="hubungi">
+<h2>📞 Hubungi Kami</h2>
+
+<p>
+<b>Jabatan Imigresen Malaysia Negeri Johor</b><br><br>
+
+📍 Aras 1-3 & 7-14, Blok 1, Kompleks Kementerian Dalam Negeri<br>
+Taman Setia Tropika<br>
+81200 Johor Bahru<br><br>
+
+☎️ Telefon : 07-2338510<br>
+
+🌐 Laman Web :
+<a href="https://johor.imi.gov.my/johor" target="_blank">
+https://johor.imi.gov.my/johor
+</a>
+<br>
+📧 Emel :
+<a href="mailto:inovasi.jimj@imi.gov.my">
+inovasi.jimj@imi.gov.my
+</a>
+
+</p><iframe
+src="https://www.google.com/maps?q=Jabatan+Imigresen+Malaysia+Negeri+Johor&output=embed"
+width="100%"
+height="350"
+style="border:0;border-radius:12px;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+</div>
+</div>
+</div>
+
+<script>
+ document.addEventListener("DOMContentLoaded", function () {
+
+    const questionBox = document.getElementById("question");
+
+    questionBox.addEventListener("keydown", function(event) {
+
+        if (event.key === "Enter" && !event.shiftKey) {
+            event.preventDefault();
+            replyMyPDT();
+        }
+
+    });
+
+});
+</script>
+<footer class="footer">
+    <p>
+        © 2026 MyPassport Drive-In & Take (MyPDT)<br>
+        Jabatan Imigresen Malaysia Negeri Johor. Hak Cipta Terpelihara.
+    </p>
+</footer>
+
+<button onclick="topFunction()" id="topBtn" title="Kembali ke Atas">↑</button>
+
+<script>
+let mybutton = document.getElementById("topBtn");
+
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("active");
+}
+window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+};
+
+function topFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+</script>
+<script src="knowledge.js?v=3"></script>
+<script src="engine.js?v=3"></script>
+<script src="chat.js?v=3"></script>
+</body>
+</html>
