@@ -45,25 +45,37 @@ header{
     margin-bottom:15px;
 } 
 .btn{
-display:inline-block;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+
 background:#0d6efd;
 color:white;
-padding:14px 22px;
-font-size:16px;
-border-radius:10px;
+
+padding:16px 30px;
+font-size:18px;
+font-weight:700;
+
+border-radius:12px;
 text-decoration:none;
-margin:8px;
-font-weight:bold;
-min-width:170px;
-text-align:center;
-transition:0.3s;
-box-shadow:0 3px 8px rgba(0,0,0,0.15);
+
+transition:.3s;
+box-shadow:0 8px 20px rgba(0,0,0,.18);
 }
 
 .btn:hover{
 background:#084298;
-transform:translateY(-6px);
-box-shadow:0 3px 8px rgba(0,0,0,0.15);
+transform:translateY(-3px);
+box-shadow:0 12px 30px rgba(0,0,0,.25);
+}
+
+.btn-green{
+background:#1bb55c;
+}
+
+.btn-green:hover{
+background:#149648;
 }
 .topbar{
 
@@ -413,7 +425,7 @@ overflow:hidden;
 
 color:white;
 
-padding:50px;
+padding:70px;
 
 box-shadow:0 12px 35px rgba(0,0,0,.15);
 
@@ -660,7 +672,7 @@ max-width:650px;
 
 <div class="hero-left">
 
-<img src="logo-jim.png" class="hero-logo">
+<img src="logoJIM.png" class="hero-logo">
 
 <h3>Selamat Datang ke</h3>
 
