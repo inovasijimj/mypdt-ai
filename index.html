@@ -390,26 +390,133 @@ iframe{
 }
 
 .hero{
+
+padding:40px;
+
+background:#f4f7fb;
+
+}
+
+.hero-card{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+background:linear-gradient(135deg,#0d47a1,#1565c0);
+
+border-radius:25px;
+
+overflow:hidden;
+
+color:white;
+
+padding:50px;
+
+box-shadow:0 12px 35px rgba(0,0,0,.15);
+
+}
+
+.hero-left{
+
+width:48%;
+
+}
+
+.hero-right{
+
+width:48%;
+
+text-align:right;
+
+}
+
+.hero-right img{
+
+width:100%;
+
+border-radius:15px;
+
+}
+
+.hero-logo{
+
+width:90px;
+
+margin-bottom:15px;
+
+}
+
+.hero h1{
+
+font-size:55px;
+
+margin:0;
+
+font-weight:bold;
+
+}
+
+.hero h3{
+
+font-size:30px;
+
+margin-bottom:10px;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+line-height:1.8;
+
+margin:30px 0;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+gap:15px;
+
+}
+
+.btn-green{
+
+background:#1bb55c;
+
+}
+
+.hero-left{
     display:flex;
-    justify-content:space-between;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.hero-right{
+    display:flex;
+    justify-content:center;
     align-items:center;
-    gap:50px;
+}
 
-    background:linear-gradient(135deg,#0b2f6b,#0b4fa8);
-
+.hero-buttons .btn{
+    padding:14px 24px;
+    border-radius:10px;
+    text-decoration:none;
     color:white;
+    font-weight:bold;
+}
 
-    padding:60px;
+.hero-buttons .btn:first-child{
+    background:#2563eb;
+}
 
-    border-radius:18px;
-
-    margin:30px auto;
-
-    max-width:1300px;
-
-    min-height:500px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.2);
+.hero-buttons .btn-green{
+    background:#16a34a;
 }
 
 .hero-text{
@@ -549,35 +656,47 @@ max-width:650px;
 </header>
  <section class="hero" id="utama">
 
-    <div class="hero-text">
+<div class="hero-card">
 
-        <h2 style="margin-bottom: 0;">Selamat Datang ke</h2>
-        <h1 style="margin-top: 0;">PORTAL MyPDT</h1>
+<div class="hero-left">
 
-        <p>
-       MyPDT merupakan inisiatif Jabatan Imigresen Malaysia Negeri Johor bagi memudahkan penyerahan pasport kepada golongan sasar. 
-       Portal ini menyediakan maklumat dengan sokongan interaktif MyPDT AI Assistant.
-       </p>
-     
-     <div style="margin-top:25px;">
-    <a href="#chat" class="btn">💬 Tanya MyPDT AI</a>
+<img src="logo-jim.png" class="hero-logo">
 
-    <a href="#drivein" class="btn" style="background:#16a34a;margin-left:10px;">
-        📅 Tempah Slot Drive-In
-    </a>
+<h3>Selamat Datang ke</h3>
+
+<h1>PORTAL MyPDT</h1>
+
+<p>
+MyPDT merupakan inisiatif Jabatan Imigresen Malaysia Negeri Johor
+bagi memudahkan proses penyerahan pasport kepada golongan sasaran.
+Portal ini menyediakan maklumat dengan sokongan interaktif
+MyPDT Smart AI Assistant.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#chat" class="btn">
+🤖 Tanya MyPDT AI
+</a>
+
+<a href="#drivein"
+class="btn btn-green">
+🚗 Tempah Slot Drive-In
+</a>
+
 </div>
 
-    </div>
+</div>
 
-    <div class="hero-image">
+<div class="hero-right">
 
-        <img src="banner-mypdt.jpeg" alt="Banner MyPDT">
+<img src="banner-mypdt.jpeg">
 
-    </div>
+</div>
+
+</div>
 
 </section>
-
-<div class="container">
 
 <div class="card">
 <h2 style="font-size:36px;font-weight:700;color:#22356f;margin-bottom:25px;">
