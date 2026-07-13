@@ -1558,21 +1558,16 @@ CHAT AI
 
 </h2>
 
-<div
-class="chat-window"
-id="chatWindow">
+<div class="chat-window">
 
-<div class="message">
+    <div id="answer">
 
-<span class="ai">
+        <div class="message">
+            <span class="ai">MyPDT AI :</span>
+            Selamat datang ke Portal MyPDT. Saya sedia membantu anda.
+        </div>
 
-MyPDT AI :
-
-</span>
-
-Selamat datang ke Portal MyPDT. Saya sedia membantu anda.
-
-</div>
+    </div>
 
 </div>
 
@@ -1580,11 +1575,11 @@ Selamat datang ke Portal MyPDT. Saya sedia membantu anda.
 
 <input
 type="text"
-id="userInput"
+id="question"
 placeholder="Taip soalan anda..."
-onkeypress="if(event.key==='Enter'){sendMessage();}">
+onkeydown="if(event.key==='Enter'){replyMyPDT();}">
 
-<button onclick="sendMessage()">
+<button onclick="replyMyPDT()">
 
 Hantar
 
