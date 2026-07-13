@@ -409,50 +409,113 @@ background:#f4f7fb;
 
 }
 
-.hero-card{
+.hero{
+
+background:url("banner-mypdt.jpeg") center center;
+
+background-size:cover;
+
+background-repeat:no-repeat;
+
+min-height:700px;
 
 display:flex;
 
 align-items:center;
 
-justify-content:space-between;
+justify-content:center;
 
-background:linear-gradient(135deg,#0d47a1,#1565c0);
-
-border-radius:25px;
-
-overflow:hidden;
-
-color:white;
-
-padding:70px;
-
-box-shadow:0 12px 35px rgba(0,0,0,.15);
+position:relative;
 
 }
 
-.hero-left{
+.hero::before{
 
-width:48%;
+content:"";
 
-}
+position:absolute;
 
-.hero-right{
+top:0;
 
-width:48%;
-
-text-align:right;
-
-}
-
-.hero-right img{
+left:0;
 
 width:100%;
 
-border-radius:15px;
+height:100%;
+
+background:rgba(255,255,255,.45);
+
+backdrop-filter:blur(2px);
 
 }
 
+.hero-overlay{
+
+position:relative;
+
+z-index:2;
+
+text-align:center;
+
+max-width:700px;
+
+padding:30px;
+
+}
+
+.hero-logo{
+
+width:110px;
+
+margin-bottom:20px;
+
+}
+
+.hero h3{
+
+font-size:38px;
+
+color:#002060;
+
+margin-bottom:5px;
+
+}
+
+.hero h1{
+
+font-size:74px;
+
+font-weight:800;
+
+color:#001b5e;
+
+margin:0;
+
+}
+
+.hero p{
+
+font-size:26px;
+
+line-height:1.7;
+
+color:#222;
+
+margin:25px 0 35px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
 .hero-logo{
 
 width:90px;
@@ -697,7 +760,38 @@ class="btn btn-green">
 </a>
 
 </div>
+<section class="hero" id="utama">
 
+<div class="hero-overlay">
+
+<img src="logo-jim.png" class="hero-logo">
+
+<h3>Selamat Datang ke</h3>
+
+<h1>PORTAL MyPDT</h1>
+
+<p>
+MyPDT merupakan inisiatif Jabatan Imigresen Malaysia Negeri Johor
+bagi memudahkan proses penyerahan pasport kepada golongan sasaran.
+Portal ini menyediakan maklumat dengan sokongan interaktif
+MyPDT Smart AI Assistant.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#chat" class="btn">
+💬 Tanya MyPDT AI
+</a>
+
+<a href="#drivein" class="btn btn-green">
+🚗 Tempah Slot Drive-In
+</a>
+
+</div>
+
+</div>
+
+</section>
 </div>
 
 <div class="hero-right">
