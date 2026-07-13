@@ -305,33 +305,40 @@ margin-bottom:15px;
 RESPONSIVE
 ======================*/
 
+@media(max-width:768px){
+
 nav{
-
 display:none;
-
 width:100%;
-
 flex-direction:column;
-
 gap:15px;
-
 margin-top:20px;
-
 }
 
 nav.show{
-
 display:flex;
-
 }
 
 .menu-toggle{
-
 display:block;
-
 margin-left:auto;
+}
 
 }
+
+@media(min-width:769px){
+
+nav{
+display:flex;
+gap:12px;
+}
+
+.menu-toggle{
+display:none;
+}
+
+}
+ 
 /*======================================================
 HERO
 ======================================================*/
