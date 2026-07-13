@@ -902,6 +902,46 @@ width:180px;
 }
 
 }
+ /* ==========================
+   MENU MOBILE
+========================== */
+
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    nav{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        margin-top:15px;
+    }
+
+    nav.show{
+        display:flex;
+    }
+
+    nav a{
+        width:100%;
+        text-align:center;
+        padding:14px;
+    }
+
+}
+
+@media (min-width:769px){
+
+    .menu-toggle{
+        display:none !important;
+    }
+
+    nav{
+        display:flex !important;
+    }
+
+}
 /*======================================================
 INFO GRID
 ======================================================*/
