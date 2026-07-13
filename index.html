@@ -1081,6 +1081,54 @@ margin-top:60px;
 margin:6px 0;
 
 }
+
+ /*==========================
+BACK TO TOP
+==========================*/
+
+#backToTop{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+width:55px;
+
+height:55px;
+
+border-radius:50%;
+
+background:#0b3768;
+
+color:white;
+
+font-size:24px;
+
+display:none;
+
+align-items:center;
+
+justify-content:center;
+
+cursor:pointer;
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+transition:.3s;
+
+z-index:9999;
+
+}
+
+#backToTop:hover{
+
+background:#1565c0;
+
+transform:translateY(-4px);
+
+}
  
 </style>
 
@@ -1124,6 +1172,10 @@ onclick="toggleMenu()">
 <a href="#chat">🤖 AI Chat</a>
 
 <a href="https://inovasijimj.github.io/mypsf/" target="_blank">
+
+🔍 MyPSF
+
+</a>
 
 <a href="#dokumen">📄 Dokumen</a>
 
@@ -1201,62 +1253,6 @@ class="btn btn-green">
 
 </section>
 <!-- ======================================================
-MYPDT AI + MYPSF
-====================================================== -->
-
-<section class="feature-section">
-
-<div class="feature-grid">
-
-<div class="feature-card ai-card">
-
-<img src="logo-aichatbot.jpeg">
-
-<div class="feature-content">
-
-<h2>
-🤖 MyPDT Smart AI Assistant
-</h2>
-
-<p>
-
-Pembantu maya pintar yang membantu orang ramai
-mendapatkan maklumat mengenai kelayakan,
-dokumen, waktu operasi, tempahan slot,
-Drive-In serta pelbagai pertanyaan mengenai MyPDT.
-
-</p>
-
-<a
-href="#chat"
-class="btn">
-
-💬 Chat With AI
-
-</a>
-
-</div>
-
-</div>
-
-<div
-class="feature-card psf-card"
-id="mypsf">
-
-<img src="pasport.jpeg" alt="MyPassport Smart Finder">
-
-<div class="feature-content">
-
-<h2>
-
-🔍 MyPassport Smart Finder
-
-</h2>
-
-<p>
-
-Semak status pasport anda
-dengan pantas untuk me<!-- ======================================================
 MYPDT AI + MYPSF
 ====================================================== -->
 
@@ -1681,9 +1677,27 @@ id="operasi">
 
 
 
-<div
-class="info-card"
-id="drivein">
+<div class="info-card">
+
+<h2>👥 Golongan Yang Layak</h2>
+
+<ul>
+
+<li>👴 Warga Emas (60 Tahun Ke atas)</li>
+
+<li>♿ Orang Kelainan Upaya (OKU)</li>
+
+<li>🤰 Wanita Hamil</li>
+
+<li>💻 Pemohon Online</li>
+
+<li>⭐ VIP</li>
+
+</ul>
+
+</div>
+
+<div class="info-card" id="drivein">
 
 <h2>
 
@@ -1693,33 +1707,55 @@ id="drivein">
 
 <p>
 
-Perkhidmatan Drive-In disediakan
-kepada kumpulan sasaran
-yang layak menggunakan
-MyPassport Drive-In & Take.
+Perkhidmatan Drive-In disediakan kepada:
 
 </p>
 
 <br>
 
+<ul>
+
+<li>👴 Warga Emas (60 Tahun Ke atas)</li>
+
+<li>♿ Orang Kelainan Upaya (OKU)</li>
+
+<li>🤰 Wanita Hamil</li>
+
+<li>💻 Pemohon Online</li>
+
+<li>⭐ VIP</li>
+
+</ul>
+
+<br>
+
 <p>
 
-Klik butang di bawah
-untuk membuat tempahan.
+Sila imbas QR Code di bawah untuk membuat tempahan slot.
 
 </p>
 
+<br>
+
+<img
+src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://docs.google.com/forms/d/e/1FAIpQLSdfxDUEbE_dkO1pQCH_Z2T3MSlkYPTZjYuUQwatgzFWmFc1KQ/viewform?usp=header"
+style="width:220px;border-radius:12px;display:block;margin:auto;">
+
+<br>
+
 <a
 
-href="https://forms.gle/"
+href="https://docs.google.com/forms/d/e/1FAIpQLSdfxDUEbE_dkO1pQCH_Z2T3MSlkYPTZjYuUQwatgzFWmFc1KQ/viewform?usp=header"
 
 target="_blank"
 
 class="btn btn-green drive-btn">
 
-🚗 Tempah Sekarang
+🚗 Tempah Slot Sekarang
 
 </a>
+
+</div>
 
 </div>
 
@@ -1793,10 +1829,6 @@ Lebih kurang 10 minit.
 HUBUNGI
 ====================================================== -->
 
-<section
-class="contact-section"
-id="hubungi">
-
 <div class="container">
 
 <h2 class="contact-title">
@@ -1809,19 +1841,23 @@ id="hubungi">
 
 <div class="contact-card">
 
-<h3>
-
-📍 Alamat
-
-</h3>
+<h3>📍 Alamat</h3>
 
 <p>
 
 Jabatan Imigresen Malaysia Negeri Johor
 
-KDN Setia Tropika
+<br><br>
 
-Johor Bahru
+Aras 1–3 & 7–14,
+
+Blok 1,
+
+Kompleks Kementerian Dalam Negeri,
+
+Taman Setia Tropika Kempas,
+
+81200 Johor Bahru.
 
 </p>
 
@@ -1829,11 +1865,7 @@ Johor Bahru
 
 <div class="contact-card">
 
-<h3>
-
-☎️ Telefon
-
-</h3>
+<h3>☎️ Telefon</h3>
 
 <p>
 
@@ -1843,15 +1875,27 @@ Johor Bahru
 
 <br>
 
-<h3>
-
-📧 Email
-
-</h3>
+<h3>📧 Emel</h3>
 
 <p>
 
-mypdt@imi.gov.my
+inovasi.jimj@imi.gov.my
+
+</p>
+
+<br>
+
+<h3>🌐 Laman Web</h3>
+
+<p>
+
+<a href="https://johor.imi.gov.my/johor"
+
+target="_blank">
+
+https://johor.imi.gov.my/johor
+
+</a>
 
 </p>
 
@@ -1859,19 +1903,21 @@ mypdt@imi.gov.my
 
 <div class="contact-card">
 
-<h3>
+<h3>📍 Lokasi</h3>
 
-🕘 Waktu Operasi
+<iframe
 
-</h3>
+src="https://www.google.com/maps?q=Jabatan+Imigresen+Malaysia+Negeri+Johor&output=embed"
 
-<p>
+width="100%"
 
-Isnin–Rabu
+height="280"
 
-9.00 pagi – 4.00 petang
+style="border:0;border-radius:15px;"
 
-</p>
+loading="lazy">
+
+</iframe>
 
 </div>
 
@@ -1881,7 +1927,11 @@ Isnin–Rabu
 
 </section>
 
+<div id="backToTop">
 
+⬆️
+
+</div>
 
 <footer class="footer">
 
@@ -1913,7 +1963,33 @@ function toggleMenu(){
 document.getElementById("navMenu").classList.toggle("show");
 
 }
+window.onscroll=function(){
 
+const btn=document.getElementById("backToTop");
+
+if(document.documentElement.scrollTop>250){
+
+btn.style.display="flex";
+
+}else{
+
+btn.style.display="none";
+
+}
+
+}
+
+document.getElementById("backToTop").onclick=function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
 </script>
 
 </body>
