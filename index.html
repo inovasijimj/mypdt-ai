@@ -338,188 +338,209 @@ display:none;
 
 }
  
-/*======================================================
-HERO
-======================================================*/
+/* ==========================================================
+   HERO SECTION
+========================================================== */
 
 .hero{
+    position:relative;
+    overflow:hidden;
+    min-height:560px;
 
-position:relative;
+    background:url("Bangunan.jpeg") center center/cover no-repeat;
 
-min-height:720px;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-background:url("BangunanKDN.png") center 30%;
-
-background-size:110%;
-
-background-repeat:no-repeat;
-
-overflow:hidden;
-
+    display:flex;
+    align-items:center;
 }
 
 .hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
 
-content:"";
+    background:linear-gradient(
+        90deg,
+        rgba(255,255,255,.95) 0%,
+        rgba(255,255,255,.82) 35%,
+        rgba(255,255,255,.15) 70%,
+        rgba(255,255,255,0) 100%
+    );
 
-position:absolute;
-
-top:0;
-
-left:0;
-
-width:100%;
-
-height:100%;
-
-background: linear-gradient(
-    90deg,
-    rgba(255,255,255,.82) 0%,
-    rgba(255,255,255,.55) 35%,
-    rgba(255,255,255,.08) 70%,
-    rgba(255,255,255,0) 100%
-);
-
-backdrop-filter:blur(0px);
-
+    z-index:1;
 }
 
-.hero-overlay{
+.hero-content{
+
     position:relative;
-    z-index:5;
+    z-index:2;
 
     width:100%;
-    max-width:700px;
+    max-width:1300px;
 
-    text-align:left;
+    margin:auto;
 
-    background:rgba(255,255,255,.82);
-    padding:30px;
-    border-radius:22px;
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    padding:70px 50px;
+
+}
+
+.hero-left{
+
+    max-width:560px;
+
+}
+
+.hero-right{
+
+    min-height:420px;
+
 }
 
 .hero-logo{
 
-width:120px;
+    width:120px;
 
-margin:auto;
-
-margin-bottom:25px;
-
-filter:drop-shadow(0 8px 18px rgba(0,0,0,.18));
+    margin-bottom:20px;
 
 }
 
 .hero h3{
 
-font-size:34px;
+    color:#0b3768;
 
-font-weight:600;
+    font-size:28px;
 
-color:#0b3768;
+    margin-bottom:10px;
 
-margin-bottom:10px;
-
-}
-
-.hero h1{
-
-font-size:74px;
-
-font-weight:800;
-
-color:#0b3768;
-
-margin-bottom:20px;
-
-line-height:1.1;
-
-}
-
-.hero p{
-
-font-size:22px;
-
-line-height:1.9;
-
-color:#374151;
-
-max-width:800px;
-
-margin:auto;
-
-margin-bottom:40px;
-
-}
-
-.hero-buttons{
-
-display:flex;
-
-justify-content:center;
-
-gap:20px;
-
-flex-wrap:wrap;
-
-}
- @media(max-width:768px){
-
-.hero{
-    min-height:520px;
-    padding:30px 20px;
-    background-position:center center;
-    background-size:cover;
-}
-
-.hero-logo{
-
-width:90px;
-
-}
-
-.hero h3{
-
-font-size:24px;
+    font-weight:600;
 
 }
 
 .hero h1{
 
-font-size:42px;
+    color:#003b8e;
+
+    font-size:64px;
+
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+    font-weight:800;
 
 }
 
 .hero p{
 
-font-size:17px;
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#333;
+
+    margin-bottom:35px;
 
 }
 
 .hero-buttons{
 
-flex-direction:column;
+    display:flex;
 
-align-items:center;
+    gap:18px;
+
+    flex-wrap:wrap;
 
 }
+
+/* ==========================================================
+   HERO BUTTON
+========================================================== */
 
 .hero-buttons .btn{
 
-width:100%;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
 
-max-width:320px;
+    padding:16px 30px;
+
+    border-radius:14px;
+
+    text-decoration:none;
+
+    font-size:16px;
+    font-weight:700;
+
+    transition:.3s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
 
 }
 
+.hero-buttons .btn:hover{
+
+    transform:translateY(-3px);
+
 }
+
+.hero-buttons .btn:first-child{
+
+    background:#0d47a1;
+    color:#fff;
+
+}
+
+.hero-buttons .btn:first-child:hover{
+
+    background:#0b3d91;
+
+}
+
+.btn-green{
+
+    background:#16a34a;
+    color:#fff;
+
+}
+
+.btn-green:hover{
+
+    background:#15803d;
+
+}
+
+ /* ==========================================================
+   HERO ANIMATION
+========================================================== */
+
+.hero-left{
+
+    animation:fadeLeft .8s ease;
+
+}
+
+@keyframes fadeLeft{
+
+    from{
+
+        opacity:0;
+        transform:translateX(-35px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateX(0);
+
+    }
+
+}
+ 
 /*======================================================
 FEATURE CARD
 ======================================================*/
@@ -1206,6 +1227,90 @@ transform:translateY(-4px);
         grid-template-columns:1fr;
     }
 }
+
+/* ==========================================================
+   HERO RESPONSIVE
+========================================================== */
+
+@media (max-width:900px){
+
+    .hero{
+
+        min-height:auto;
+
+    }
+
+    .hero::before{
+
+        background:rgba(255,255,255,.72);
+
+    }
+
+    .hero-content{
+
+        grid-template-columns:1fr;
+
+        padding:50px 25px;
+
+        text-align:left;
+
+    }
+
+    .hero-left{
+
+        max-width:100%;
+
+    }
+
+    .hero-right{
+
+        display:none;
+
+    }
+
+    .hero-logo{
+
+        width:90px;
+
+    }
+
+    .hero h3{
+
+        font-size:22px;
+
+    }
+
+    .hero h1{
+
+        font-size:42px;
+
+    }
+
+    .hero p{
+
+        font-size:16px;
+
+        line-height:1.7;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .hero-buttons .btn{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+}
  
 </style>
 
@@ -1268,65 +1373,57 @@ onclick="toggleMenu()">
 
 </header>
 
-<!-- ======================================================
+<!-- ==========================================================
 HERO
-====================================================== -->
+=========================================================== -->
+<section class="hero" id="utama">
 
-<section
-class="hero"
-id="utama">
+    <div class="hero-content">
 
-<div class="hero-overlay">
+        <!-- LEFT -->
+        <div class="hero-left">
 
-<img
-src="LogoJIM.png"
-class="hero-logo">
+            <img src="LogoJIM.png" class="hero-logo" alt="Logo JIM">
 
-<h3>
+            <h3>Selamat Datang ke</h3>
 
-Selamat Datang ke
+            <h1>PORTAL MyPDT</h1>
 
-</h3>
+            <p>
+                MyPDT merupakan inisiatif Jabatan Imigresen Malaysia Negeri Johor
+                bagi memudahkan urusan penyerahan passport kepada golongan sasar
+                melalui perkhidmatan Drive-In &amp; Take.
 
-<h1>
+                Portal ini turut menyediakan semakan status passport serta
+                bantuan pintar MyPDT AI Assistant.
+            </p>
 
-PORTAL MyPDT
+            <div class="hero-buttons">
 
-</h1>
+                <a href="#chat" class="btn">
+                    💬 Tanya MyPDT AI
+                </a>
 
-<p>
+                <a href="#drivein" class="btn btn-green">
+                    🚗 Tempah Slot Drive-In
+                </a>
 
-Portal rasmi MyPassport Drive-In & Take (MyPDT)
-merupakan inisiatif Jabatan Imigresen Malaysia Negeri Johor
-bagi memudahkan urusan pengambilan pasport
-secara lebih pantas, mudah dan sistematik
-dengan sokongan MyPDT Smart AI Assistant.
+            </div>
 
-</p>
+        </div>
 
-<div class="hero-buttons">
+        <!-- RIGHT -->
+        <div class="hero-right">
 
-<a
-href="#chat"
-class="btn">
+            <!-- kosong.
+                 gambar bangunan akan dipaparkan menggunakan CSS -->
 
-🤖 Tanya MyPDT AI
+        </div>
 
-</a>
-
-<a
-href="#drivein"
-class="btn btn-green">
-
-🚗 Tempah Slot Drive-In
-
-</a>
-
-</div>
-
-</div>
+    </div>
 
 </section>
+ 
 <!-- ======================================================
 MYPDT AI + MYPSF
 ====================================================== -->
