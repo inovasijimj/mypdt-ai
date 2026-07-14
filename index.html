@@ -397,7 +397,7 @@ position:relative;
 
 z-index:5;
 
-width:min(900px,92%);
+width:min(700px,90%);
 
 text-align:center;
 
@@ -955,13 +955,9 @@ padding:70px 0;
 }
 
 .info-grid{
-
-display:grid;
-
-grid-template-columns:repeat(4,1fr));
-
-gap:30px;
-
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
 }
 
 .info-card{
