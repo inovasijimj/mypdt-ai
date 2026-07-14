@@ -7,7 +7,6 @@
 
 <meta name="viewport"
 content="width=device-width, initial-scale=1.0">
-
 <title>
 Portal MyPDT | MyPassport Drive-In & Take
 </title>
@@ -835,14 +834,14 @@ font-weight:700;
 }
 
 .chat-window{
-    min-height:60px;
-    max-height:120px;
+    min-height:320px;
+    max-height:420px;
     overflow-y:auto;
     border:1px solid #d9e3ef;
-    border-radius:15px;
-    padding:20px;
+    border-radius:18px;
+    padding:22px;
     background:#f8fbff;
-    margin-bottom:20px;
+    margin-bottom:25px;
 }
 
 .message{
@@ -1580,13 +1579,24 @@ Saya boleh membantu anda mengenai:
 
 <div class="chat-input">
 
-<input
-type="text"
-id="question"
-placeholder="Taip soalan anda..."
-onkeydown="if(event.key==='Enter'){replyMyPDT();}">
+<textarea
+    id="question"
+    rows="6"
+    placeholder="Taip soalan anda..."
+    onkeydown="if(event.key==='Enter' && !event.shiftKey){event.preventDefault();replyMyPDT();}"
+    style="
+        width:100%;
+        min-height:180px;
+        padding:18px;
+        border-radius:14px;
+        border:1px solid #d0d9e5;
+        font-size:16px;
+        resize:vertical;
+        box-sizing:border-box;
+    ">
+</textarea>
 
-<button onclick="replyMyPDT()">
+<button class="btn" onclick="replyMyPDT()">
 
 Hantar
 
