@@ -1,223 +1,325 @@
 window.knowledge = {
 
-    // =====================================================
-    // 1. APA ITU MYPDT
-    // =====================================================
-    umum:{
-        title:"🤖 Apa Itu MyPDT?",
 
-        keywords:[
-            "mypdt",
-            "apa itu mypdt",
-            "mypdt itu apa",
-            "maksud mypdt",
-            "my passport drive in take",
-            "my passport drive-in take",
-            "drive in take",
-            "my pdt",
-            "my passport",
-            "passport drive in"
-        ],
+// =====================================================
+// 1. APA ITU MYPDT
+// =====================================================
+umum:{
 
-        answer:`
+title:"🤖 Apa Itu MyPDT?",
+
+keywords:[
+
+"mypdt",
+"apa itu mypdt",
+"mypdt itu apa",
+"maksud mypdt",
+"my passport drive in take",
+"my passport drive-in take",
+"my passport drive & take",
+"my pdt",
+"passport drive in",
+"passport drive-in",
+"drive in take",
+"projek mypdt",
+"projek inovasi",
+"my passport",
+"my passport johor"
+
+],
+
+answer:`
+
 📘 MyPassport Drive-In & Take (MyPDT) ialah satu projek inovasi Jabatan Imigresen Malaysia Negeri Johor.
 
-MyPDT menyediakan kaedah pengambilan pasport secara Walk-In dan Drive-In yang lebih mudah, cepat, teratur dan mesra pelanggan.
+MyPDT menyediakan kemudahan pengambilan pasport secara Walk-In dan Drive-In yang lebih mudah, cepat dan teratur kepada golongan sasar yang layak.
 
-Perkhidmatan ini dibangunkan bagi meningkatkan pengalaman pelanggan serta mengurangkan kesesakan di kaunter pengambilan pasport.
+Perkhidmatan ini dibangunkan bagi meningkatkan pengalaman pelanggan, mengurangkan kesesakan di kaunter serta memperkukuhkan penyampaian perkhidmatan secara digital.
+
 `
-    },
 
-    // =====================================================
-    // 2. OBJEKTIF
-    // =====================================================
-    objektif:{
-        title:"🎯 Objektif MyPDT",
+},
 
-        keywords:[
-            "objektif",
-            "tujuan",
-            "matlamat",
-            "fungsi",
-            "kenapa mypdt",
-            "mengapa mypdt",
-            "objective",
-            "purpose",
-            "why mypdt"
-        ],
 
-        answer:`
-🎯 Objektif MyPDT adalah untuk:
+// =====================================================
+// 2. OBJEKTIF
+// =====================================================
+objektif:{
 
-✅ Mengurangkan kesesakan di kaunter.
+title:"🎯 Objektif MyPDT",
+
+keywords:[
+
+"objektif",
+"tujuan",
+"matlamat",
+"fungsi",
+"fungsi mypdt",
+"kenapa mypdt",
+"mengapa mypdt",
+"kenapa diwujudkan",
+"purpose",
+"objective",
+"why mypdt"
+
+],
+
+answer:`
+
+🎯 Objektif MyPDT ialah:
+
+✅ Mengurangkan kesesakan di kaunter pengambilan pasport.
 
 ✅ Mempercepatkan proses pengambilan pasport.
 
-✅ Memberikan pengalaman pelanggan yang lebih baik.
+✅ Memberikan pengalaman pelanggan yang lebih mudah, cepat dan teratur.
 
-✅ Mengoptimumkan ruang operasi.
+✅ Mengoptimumkan penggunaan ruang operasi.
 
 ✅ Meningkatkan kecekapan penyampaian perkhidmatan Jabatan Imigresen Malaysia.
+
 `
-    },
 
-    // =====================================================
-    // 3. KELEBIHAN
-    // =====================================================
-    kelebihan:{
-        title:"⭐ Kelebihan MyPDT",
+},
 
-        keywords:[
-            "kelebihan",
-            "apa kelebihan",
-            "apa manfaat",
-            "benefit",
-            "advantage",
-            "why use mypdt",
-            "kenapa guna mypdt"
-        ],
 
-        answer:`
-⭐ Kelebihan MyPDT:
+// =====================================================
+// 3. LATAR BELAKANG
+// =====================================================
+latarbelakang:{
 
-✅ Proses lebih cepat.
+title:"📘 Latar Belakang",
 
-✅ Kurang masa menunggu.
+keywords:[
 
-✅ Kurang kesesakan.
+"latar belakang",
+"background",
+"asal usul",
+"kenapa buat",
+"bagaimana bermula",
+"idea",
+"idea mypdt",
+"sejarah"
 
-✅ Walk-In dan Drive-In.
+],
+
+answer:`
+
+📘 MyPDT dibangunkan hasil pemerhatian terhadap kesesakan di kaunter pengambilan pasport serta keperluan meningkatkan pengalaman pelanggan.
+
+Inovasi ini memperkenalkan konsep Walk-In dan Drive-In bagi membantu mempercepatkan proses pengambilan pasport menggunakan sumber sedia ada tanpa pertambahan pegawai.
+
+`
+
+},
+
+
+// =====================================================
+// 4. KELEBIHAN
+// =====================================================
+kelebihan:{
+
+title:"⭐ Kelebihan MyPDT",
+
+keywords:[
+
+"kelebihan",
+"manfaat",
+"benefit",
+"advantage",
+"apa kelebihan",
+"kenapa guna",
+"kenapa perlu guna",
+"why use"
+
+],
+
+answer:`
+
+⭐ Antara kelebihan MyPDT ialah:
+
+✅ Pengambilan pasport lebih cepat.
+
+✅ Mengurangkan masa menunggu.
+
+✅ Mengurangkan kesesakan di kaunter.
+
+✅ Menawarkan pilihan Walk-In dan Drive-In.
 
 ✅ Tempahan slot secara digital.
 
 ✅ AI Smart Assistant.
 
 ✅ MyPassport Smart Finder.
+
 `
-    },
 
-    // =====================================================
-    // 4. IMPAK
-    // =====================================================
-    impak:{
-        title:"📈 Impak MyPDT",
+},
 
-        keywords:[
-            "impak",
-            "impact",
-            "hasil",
-            "kejayaan",
-            "faedah",
-            "manfaat organisasi"
-        ],
 
-        answer:`
+// =====================================================
+// 5. IMPAK
+// =====================================================
+impak:{
+
+title:"📈 Impak MyPDT",
+
+keywords:[
+
+"impak",
+"impact",
+"hasil",
+"faedah",
+"kesan",
+"manfaat organisasi",
+"apa impak"
+
+],
+
+answer:`
+
 📈 Pelaksanaan MyPDT memberi impak seperti:
 
 ✅ Mengurangkan kesesakan pelanggan.
 
-✅ Mempercepatkan proses pengambilan pasport.
+✅ Mempercepatkan proses penyerahan pasport.
 
 ✅ Meningkatkan kepuasan pelanggan.
 
-✅ Membantu pegawai bekerja dengan lebih cekap.
+✅ Meningkatkan kecekapan pegawai.
 
 ✅ Mengoptimumkan penggunaan ruang operasi.
+
 `
-    },
 
-    // =====================================================
-    // 5. PENDIGITALAN
-    // =====================================================
-    digital:{
-        title:"💻 Pendigitalan",
+},
 
-        keywords:[
-            "digital",
-            "pendigitalan",
-            "digitalisasi",
-            "ict",
-            "teknologi",
-            "digital transformation"
-        ],
 
-        answer:`
+// =====================================================
+// 6. PENDIGITALAN
+// =====================================================
+digital:{
+
+title:"💻 Pendigitalan",
+
+keywords:[
+
+"digital",
+"pendigitalan",
+"digitalisasi",
+"ict",
+"teknologi",
+"transformasi digital"
+
+],
+
+answer:`
+
 💻 Elemen pendigitalan MyPDT merangkumi:
 
 * Portal MyPDT
 
-* Tempahan slot secara dalam talian
+* Tempahan Slot secara dalam talian
 
 * AI Smart Assistant
 
-* MyPassport Smart Finder (MyPSF)
+* MyPassport Smart Finder
 
-* Pengurusan data secara masa nyata
+* Pengurusan data masa nyata menggunakan Google Apps Script dan Google Sheets.
+
 `
-    },
 
-    // =====================================================
-    // 6. VALUE FOR MONEY
-    // =====================================================
-    vfm:{
-        title:"💰 Value For Money",
+},
 
-        keywords:[
-            "value for money",
-            "vfm",
-            "kos",
-            "penjimatan",
-            "cost saving",
-            "murah"
-        ],
+// =====================================================
+// 7. VALUE FOR MONEY
+// =====================================================
+vfm:{
 
-        answer:`
+title:"💰 Value For Money",
+
+keywords:[
+
+"value for money",
+"vfm",
+"kos",
+"penjimatan",
+"cost",
+"cost saving",
+"murah",
+"jimat",
+"penjimatan kos",
+"nilai untuk wang"
+
+],
+
+answer:`
+
 💰 MyPDT dibangunkan menggunakan platform digital sedia ada seperti Google Apps Script, Google Sheets dan GitHub Pages.
 
-Pendekatan ini mengurangkan kos pembangunan tanpa memerlukan pertambahan pegawai, namun tetap memberikan impak yang tinggi kepada pelanggan dan organisasi.
+Pendekatan ini tidak memerlukan pembangunan sistem yang mahal atau pertambahan pegawai, namun tetap memberikan impak yang tinggi kepada pelanggan dan organisasi.
+
 `
-    },
 
-    // =====================================================
-    // 7. KEMAMPANAN
-    // =====================================================
-    kemampanan:{
-        title:"🌱 Kemampanan",
+},
 
-        keywords:[
-            "kemampanan",
-            "sustainability",
-            "mampan",
-            "future",
-            "masa depan"
-        ],
 
-        answer:`
-🌱 MyPDT mudah diselenggara dan boleh diperluaskan ke pejabat imigresen lain.
+// =====================================================
+// 8. KEMAMPANAN
+// =====================================================
+kemampanan:{
 
-Sistem ini menggunakan platform yang mudah dikemas kini serta tidak memerlukan kos penyelenggaraan yang tinggi.
+title:"🌱 Kemampanan",
+
+keywords:[
+
+"kemampanan",
+"sustainability",
+"mampan",
+"berterusan",
+"future",
+"masa depan"
+
+],
+
+answer:`
+
+🌱 MyPDT mudah diselenggara kerana menggunakan platform sedia ada.
+
+Sistem ini juga boleh diperluaskan ke pejabat imigresen lain dengan penyesuaian minimum terhadap pangkalan data dan prosedur operasi.
+
 `
-    },
 
-    // =====================================================
-    // 8. BENCHMARK
-    // =====================================================
-    benchmark:{
-        title:"🌍 Benchmark Antarabangsa",
+},
 
-        keywords:[
-            "benchmark",
-            "antarabangsa",
-            "negara lain",
-            "singapura",
-            "uk",
-            "australia",
-            "korea",
-            "jepun"
-        ],
 
-        answer:`
-🌍 Berdasarkan kajian pasukan projek, kebanyakan negara masih menggunakan kaunter atau penghantaran melalui pos bagi pengambilan pasport.
+// =====================================================
+// 9. BENCHMARK
+// =====================================================
+benchmark:{
+
+title:"🌍 Benchmark Antarabangsa",
+
+keywords:[
+
+"benchmark",
+"antarabangsa",
+"negara lain",
+"singapore",
+"singapura",
+"australia",
+"uk",
+"united kingdom",
+"korea",
+"jepun",
+"luar negara",
+"perbandingan"
+
+],
+
+answer:`
+
+🌍 Berdasarkan kajian pasukan projek, kebanyakan negara masih menggunakan kaunter atau penghantaran melalui pos bagi proses pengambilan pasport.
 
 MyPDT memperkenalkan pendekatan yang lebih menyeluruh melalui gabungan:
 
@@ -231,696 +333,105 @@ MyPDT memperkenalkan pendekatan yang lebih menyeluruh melalui gabungan:
 
 🔍 MyPassport Smart Finder
 
-Pendekatan ini membantu meningkatkan pengalaman pelanggan dan kecekapan operasi.
+Pendekatan ini membantu meningkatkan pengalaman pelanggan serta kecekapan operasi.
+
 `
-    },
 
-    // =====================================================
-    // 9. AI SMART ASSISTANT
-    // =====================================================
-    ai:{
-        title:"🤖 AI Smart Assistant",
-
-        keywords:[
-            "ai",
-            "chatbot",
-            "smart assistant",
-            "artificial intelligence",
-            "robot",
-            "bot"
-        ],
-
-        answer:`
-🤖 MyPDT Smart AI Assistant dibangunkan untuk membantu pelanggan mendapatkan maklumat dengan cepat.
-
-Jawapan diberikan berdasarkan knowledge base rasmi MyPDT. Sekiranya maklumat tidak ditemui, pengguna akan dinasihatkan untuk menghubungi Jabatan Imigresen Malaysia bagi mendapatkan maklumat lanjut.
-`
-    },
-
-// =====================================================
-// 10. KELAYAKAN
-// =====================================================
-kelayakan:{
-title:"👥 Kelayakan MyPDT",
-
-keywords:[
-"kelayakan",
-"layak",
-"siapa layak",
-"siapa boleh guna",
-"boleh guna",
-"boleh menggunakan",
-"eligible",
-"eligibility",
-"who can use",
-"who is eligible"
-],
-
-answer:`
-👥 MyPDT disediakan kepada lima golongan sasar:
-
-✅ Warga Emas (60 tahun ke atas)
-
-✅ Orang Kurang Upaya (OKU)
-
-✅ Wanita Hamil
-
-✅ Pemohon Online
-
-✅ VIP
-
-Pemohon yang memenuhi sekurang-kurangnya satu kategori tersebut layak menggunakan perkhidmatan MyPDT.
-`
 },
 
-// =====================================================
-// 11. WARGA EMAS
-// =====================================================
-wargaemas:{
-title:"👴 Warga Emas",
-
-keywords:[
-"warga emas",
-"orang tua",
-"senior",
-"senior citizen",
-"60 tahun",
-"61 tahun",
-"65 tahun",
-"70 tahun",
-"umur 60",
-"ibu saya",
-"ayah saya"
-],
-
-answer:`
-👴 Warga emas yang berumur 60 tahun dan ke atas layak menggunakan perkhidmatan MyPDT.
-
-Sila hadir bersama dokumen yang diperlukan semasa pengambilan pasport.
-`
-},
 
 // =====================================================
-// 12. OKU
+// 10. AI SMART ASSISTANT
 // =====================================================
-oku:{
-title:"♿ Orang Kurang Upaya",
+ai:{
 
-keywords:[
-"oku",
-"orang kurang upaya",
-"orang kelainan upaya",
-"disabled",
-"wheelchair",
-"kerusi roda",
-"kad oku"
-],
-
-answer:`
-♿ Orang Kurang Upaya (OKU) layak menggunakan perkhidmatan MyPDT.
-
-Sila bawa MyKad, pasport lama serta Kad OKU (jika berkaitan).
-`
-},
-
-// =====================================================
-// 13. WANITA HAMIL
-// =====================================================
-hamil:{
-title:"🤰 Wanita Hamil",
-
-keywords:[
-"hamil",
-"wanita hamil",
-"mengandung",
-"pregnant",
-"pregnancy"
-],
-
-answer:`
-🤰 Wanita hamil merupakan salah satu kumpulan sasar MyPDT.
-
-Perkhidmatan ini disediakan bagi memberikan pengalaman pengambilan pasport yang lebih mudah dan selesa.
-`
-},
-
-// =====================================================
-// 14. PEMOHON ONLINE
-// =====================================================
-online:{
-title:"💻 Pemohon Online",
-
-keywords:[
-"online",
-"pemohon online",
-"permohonan online",
-"passport online",
-"pasport online",
-"mohon online"
-],
-
-answer:`
-💻 Pemohon yang membuat permohonan pasport secara dalam talian layak menggunakan perkhidmatan MyPDT.
-`
-},
-
-// =====================================================
-// 15. VIP
-// =====================================================
-vip:{
-title:"⭐ VIP",
-
-keywords:[
-"vip",
-"orang kenamaan",
-"kenamaan"
-],
-
-answer:`
-⭐ Golongan VIP merupakan salah satu kumpulan sasar yang layak menggunakan MyPDT.
-`
-},
-
-// =====================================================
-// 16. DOKUMEN
-// =====================================================
-dokumen:{
-title:"📄 Dokumen Diperlukan",
-
-keywords:[
-"dokumen",
-"apa perlu bawa",
-"apa kena bawa",
-"mykad",
-"ic",
-"kad pengenalan",
-"passport lama",
-"pasport lama",
-"resit",
-"resit bayaran",
-"dokumen sokongan"
-],
-
-answer:`
-📄 Dokumen yang perlu dibawa:
-
-✅ MyKad
-
-✅ Pasport Lama
-
-✅ Resit Bayaran
-
-✅ Dokumen Sokongan (jika berkaitan)
-
-⚠️ Pastikan semua dokumen dibawa bagi melancarkan urusan pengambilan pasport.
-`
-},
-
-// =====================================================
-// 17. WAKIL AMBIL PASPORT
-// =====================================================
-wakil:{
-title:"👥 Wakil Pengambilan Pasport",
-
-keywords:[
-"wakil",
-"wakil ambil",
-"orang lain ambil",
-"boleh wakil",
-"ambil bagi pihak",
-"representative",
-"collect for me"
-],
-
-answer:`
-👥 Permohonan pengambilan melalui wakil adalah tertakluk kepada syarat dan prosedur Jabatan Imigresen Malaysia.
-
-Sila hubungi pejabat Jabatan Imigresen Malaysia Negeri Johor bagi mendapatkan pengesahan dan dokumen yang diperlukan sebelum hadir.
-`
-},
-
-// =====================================================
-// 18. RESIT HILANG
-// =====================================================
-resit:{
-title:"🧾 Resit Hilang",
-
-keywords:[
-"resit hilang",
-"hilang resit",
-"tak ada resit",
-"resit tiada",
-"lost receipt"
-],
-
-answer:`
-🧾 Sekiranya resit bayaran hilang, sila hubungi atau hadir ke pejabat Jabatan Imigresen Malaysia bagi mendapatkan bantuan lanjut sebelum hadir ke MyPDT.
-`
-},
-
-// =====================================================
-// 19. PMA ROSAK
-// =====================================================
-pmarosak:{
-title:"📘 Pasport Lama Rosak",
-
-keywords:[
-"passport rosak",
-"pasport rosak",
-"pma rosak",
-"passport koyak",
-"passport basah",
-"rosak"
-],
-
-answer:`
-📘 Sekiranya pasport lama rosak, sila maklumkan kepada pegawai semasa hadir.
-
-Pegawai akan membuat semakan mengikut prosedur yang berkuat kuasa.
-`
-},
-
-// =====================================================
-// 20. DOKUMEN TIDAK LENGKAP
-// =====================================================
-dokumentidaklengkap:{
-title:"⚠️ Dokumen Tidak Lengkap",
-
-keywords:[
-"dokumen tak lengkap",
-"dokumen tidak lengkap",
-"tertinggal dokumen",
-"lupa bawa mykad",
-"lupa bawa passport",
-"tak cukup dokumen"
-],
-
-answer:`
-⚠️ Sekiranya dokumen tidak lengkap, urusan pengambilan pasport mungkin tidak dapat diproses.
-
-Sila pastikan semua dokumen yang diperlukan dibawa semasa hadir ke MyPDT.
-`
-},
-
-// =====================================================
-// 21. WALK-IN
-// =====================================================
-walkin:{
-title:"🚶 Perkhidmatan Walk-In",
-
-keywords:[
-"walk in",
-"walk-in",
-"walkin",
-"kaunter",
-"datang terus",
-"tanpa tempahan",
-"tak perlu booking",
-"walk in passport"
-],
-
-answer:`
-🚶 Perkhidmatan Walk-In tidak memerlukan tempahan.
-
-Waktu operasi Walk-In:
-
-📅 Isnin hingga Rabu
-
-🕘 9.00 pagi – 1.00 tengah hari
-
-🕝 2.30 petang – 4.00 petang
-
-Sila hadir bersama dokumen yang diperlukan.
-`
-},
-
-// =====================================================
-// 22. DRIVE-IN
-// =====================================================
-drivein:{
-title:"🚗 Perkhidmatan Drive-In",
-
-keywords:[
-"drive in",
-"drive-in",
-"drivein",
-"ambil dalam kereta",
-"tak turun kereta",
-"tidak turun kereta",
-"pandu masuk",
-"drive"
-],
-
-answer:`
-🚗 MyPDT Drive-In membolehkan pelanggan mengambil pasport menggunakan kenderaan tanpa perlu memasuki ruang menunggu.
-
-📌 Tempahan slot diperlukan bagi menggunakan perkhidmatan Drive-In.
-`
-},
-
-// =====================================================
-// 23. TEMPAHAN SLOT
-// =====================================================
-tempahan:{
-title:"📅 Tempahan Slot",
-
-keywords:[
-"tempahan",
-"slot",
-"booking",
-"book",
-"reserve",
-"tempah",
-"buat tempahan",
-"perlu booking",
-"kena booking",
-"slot mypdt"
-],
-
-answer:`
-📅 Tempahan hanya diperlukan bagi perkhidmatan Drive-In.
-
-Tempahan boleh dibuat melalui Google Form rasmi MyPDT dengan mengimbas Kod QR atau melalui pautan yang disediakan.
-
-🚶 Walk-In tidak memerlukan tempahan.
-`
-},
-
-// =====================================================
-// 24. QR CODE
-// =====================================================
-qrcode:{
-title:"📱 Kod QR",
-
-keywords:[
-"qr",
-"qr code",
-"kod qr",
-"scan qr",
-"imbas qr",
-"barcode qr"
-],
-
-answer:`
-📱 Kod QR disediakan untuk memudahkan pelanggan membuat tempahan slot Drive-In.
-
-Imbas Kod QR menggunakan telefon pintar dan lengkapkan maklumat yang diperlukan.
-`
-},
-
-// =====================================================
-// 25. SLOT PENUH
-// =====================================================
-slotpenuh:{
-title:"🚫 Slot Penuh",
-
-keywords:[
-"slot penuh",
-"full slot",
-"habis slot",
-"tiada slot",
-"tak ada slot",
-"booking penuh"
-],
-
-answer:`
-🚫 Sekiranya slot Drive-In telah penuh:
-
-✅ Pilih tarikh lain yang masih mempunyai kekosongan.
-
-ATAU
-
-✅ Gunakan perkhidmatan Walk-In sekiranya layak.
-`
-},
-
-// =====================================================
-// 26. TUKAR TEMPAHAN
-// =====================================================
-tukarslot:{
-title:"📅 Tukar Tempahan",
-
-keywords:[
-"tukar slot",
-"ubah slot",
-"ubah tarikh",
-"reschedule",
-"cancel booking",
-"batal booking",
-"cancel slot"
-],
-
-answer:`
-📅 Sekiranya ingin menukar atau membatalkan tempahan, sila hubungi Jabatan Imigresen Malaysia Negeri Johor untuk bantuan lanjut.
-`
-},
-
-// =====================================================
-// 27. LOKASI
-// =====================================================
-lokasi:{
-title:"📍 Lokasi MyPDT",
-
-keywords:[
-"lokasi",
-"alamat",
-"kat mana",
-"di mana",
-"setia tropika",
-"blok 1",
-"kompleks kdn"
-],
-
-answer:`
-📍 MyPDT beroperasi di:
-
-Jabatan Imigresen Malaysia Negeri Johor
-
-Blok 1,
-Kompleks Kementerian Dalam Negeri,
-Taman Setia Tropika,
-81200 Johor Bahru.
-`
-},
-
-// =====================================================
-// 28. WAKTU OPERASI
-// =====================================================
-operasi:{
-title:"🕒 Waktu Operasi",
-
-keywords:[
-"waktu operasi",
-"jam berapa",
-"buka",
-"tutup",
-"isnin",
-"selasa",
-"rabu",
-"khamis",
-"jumaat",
-"sabtu",
-"ahad",
-"cuti umum"
-],
-
-answer:`
-🚗 DRIVE-IN
-
-📅 Isnin hingga Rabu
-
-🕙 10.00 pagi – 1.00 tengah hari
-
-🕝 2.30 petang – 4.00 petang
-
-🚶 WALK-IN
-
-📅 Isnin hingga Rabu
-
-🕘 9.00 pagi – 1.00 tengah hari
-
-🕝 2.30 petang – 4.00 petang
-
-❌ Ditutup pada Khamis, Jumaat, Sabtu, Ahad dan Cuti Umum.
-`
-},
-
-// =====================================================
-// 29. TEMPOH PROSES
-// =====================================================
-tempoh:{
-title:"⏱️ Tempoh Pengambilan",
-
-keywords:[
-"berapa lama",
-"tempoh",
-"10 minit",
-"ambil masa",
-"cepat",
-"lama"
-],
-
-answer:`
-⏱️ Tempoh pengambilan pasport dianggarkan sekitar 10 minit sekiranya dokumen lengkap dan semua syarat dipenuhi.
-`
-},
-
-// =====================================================
-// 30. LEWAT HADIR
-// =====================================================
-lewathadir:{
-title:"⌛ Lewat Hadir",
-
-keywords:[
-"lewat",
-"terlepas slot",
-"miss slot",
-"lambat",
-"tak sempat",
-"datang lambat"
-],
-
-answer:`
-⌛ Sekiranya anda lewat hadir atau terlepas slot tempahan, sila hubungi Jabatan Imigresen Malaysia Negeri Johor untuk mendapatkan bantuan atau arahan lanjut.
-`
-},
-
-// =====================================================
-// 31. MYPASSPORT SMART FINDER (MyPSF)
-// =====================================================
-mypsf:{
-title:"🔍 MyPassport Smart Finder (MyPSF)",
-
-keywords:[
-"mypsf",
-"smart finder",
-"passport finder",
-"pasport finder",
-"cari passport",
-"cari pasport",
-"semak passport",
-"semak pasport",
-"status passport",
-"status pasport"
-],
-
-answer:`
-🔍 MyPassport Smart Finder (MyPSF) merupakan sistem yang dibangunkan bagi membantu proses pengambilan pasport.
-
-👤 Bagi pelanggan:
-* Menyemak status pasport menggunakan No. Resit.
-
-👨‍💼 Bagi pegawai:
-* Mencari lokasi pasport dengan pantas menggunakan No. Resit atau barcode.
-* Mengemas kini status penyerahan pasport secara masa nyata.
-`
-},
-
-// =====================================================
-// 32. STATUS PASPORT
-// =====================================================
-statuspassport:{
-title:"📘 Status Pasport",
-
-keywords:[
-"status",
-"status passport",
-"status pasport",
-"passport siap",
-"pasport siap",
-"dah siap",
-"belum siap",
-"siap ke"
-],
-
-answer:`
-📘 Status pasport boleh disemak menggunakan portal MyPassport Smart Finder (MyPSF) dengan memasukkan No. Resit.
-
-Maklumat yang dipaparkan adalah berdasarkan rekod semasa.
-`
-},
-
-// =====================================================
-// 33. NO. RESIT
-// =====================================================
-noresit:{
-title:"🧾 No. Resit",
-
-keywords:[
-"no resit",
-"nombor resit",
-"receipt",
-"receipt number",
-"resit",
-"resit bayaran"
-],
-
-answer:`
-🧾 No. Resit digunakan sebagai nombor rujukan untuk menyemak status pasport serta membuat carian dalam MyPassport Smart Finder (MyPSF).
-`
-},
-
-// =====================================================
-// 34. BARCODE
-// =====================================================
-barcode:{
-title:"📷 Barcode",
-
-keywords:[
-"barcode",
-"scan barcode",
-"imbas barcode",
-"scanner",
-"scan"
-],
-
-answer:`
-📷 Barcode digunakan oleh pegawai bagi mempercepatkan proses carian pasport serta mengurangkan kesilapan semasa penyerahan.
-`
-},
-
-// =====================================================
-// 35. AI SMART ASSISTANT
-// =====================================================
-smartai:{
 title:"🤖 AI Smart Assistant",
 
 keywords:[
-"smart ai",
-"smart assistant",
+
+"ai",
 "chatbot",
-"ai chatbot",
+"smart assistant",
+"robot",
 "artificial intelligence",
-"ai assistant"
+"ai chatbot",
+"virtual assistant",
+"bot"
+
 ],
 
 answer:`
-🤖 MyPDT Smart AI Assistant membantu pelanggan mendapatkan maklumat berkaitan MyPDT dengan lebih pantas.
 
-AI ini menggunakan knowledge base rasmi MyPDT bagi memastikan maklumat yang diberikan adalah konsisten dan tepat.
+🤖 MyPDT Smart AI Assistant membantu pelanggan mendapatkan maklumat berkaitan MyPDT dengan lebih cepat.
+
+AI ini menggunakan knowledge base rasmi MyPDT bagi memastikan jawapan yang diberikan adalah konsisten, tepat dan selaras dengan prosedur perkhidmatan.
+
+Sekiranya maklumat tidak ditemui, pengguna disarankan menghubungi Jabatan Imigresen Malaysia bagi mendapatkan bantuan lanjut.
+
 `
+
 },
 
+
 // =====================================================
-// 36. TEKNOLOGI
+// 11. MYPASSPORT SMART FINDER
+// =====================================================
+mypsf:{
+
+title:"🔍 MyPassport Smart Finder (MyPSF)",
+
+keywords:[
+
+"mypsf",
+"passport smart finder",
+"smart finder",
+"finder",
+"cari passport",
+"cari pasport",
+"passport finder",
+"pasport finder",
+"smart search"
+
+],
+
+answer:`
+
+🔍 MyPassport Smart Finder (MyPSF) merupakan inovasi yang membantu proses pengambilan pasport.
+
+👤 Pelanggan boleh menyemak status pasport menggunakan No. Resit.
+
+👨‍💼 Pegawai boleh membuat carian pasport menggunakan No. Resit atau barcode dengan lebih pantas dan tepat.
+
+`
+
+},
+
+
+// =====================================================
+// 12. TEKNOLOGI
 // =====================================================
 teknologi:{
+
 title:"💻 Teknologi Digunakan",
 
 keywords:[
+
 "teknologi",
 "technology",
-"dibangunkan menggunakan",
-"platform",
 "html",
 "css",
 "javascript",
 "google apps script",
-"github"
+"google sheets",
+"github",
+"github pages",
+"sistem dibangunkan"
+
 ],
 
 answer:`
-💻 MyPDT dibangunkan menggunakan beberapa teknologi sedia ada seperti:
+
+💻 MyPDT dibangunkan menggunakan teknologi berikut:
 
 ✅ HTML
 
@@ -934,110 +445,823 @@ answer:`
 
 ✅ GitHub Pages
 
-Teknologi ini dipilih bagi memastikan sistem mudah diselenggara dan menjimatkan kos.
+Teknologi ini dipilih kerana mudah diselenggara, menjimatkan kos serta sesuai untuk pembangunan inovasi digital.
+
 `
+
 },
 
 // =====================================================
-// 37. KESELAMATAN
+// 13. KELAYAKAN
 // =====================================================
-keselamatan:{
-title:"🔒 Keselamatan Maklumat",
+kelayakan:{
+
+title:"👥 Kelayakan MyPDT",
 
 keywords:[
-"keselamatan",
-"security",
-"data selamat",
-"privasi",
-"privacy",
-"maklumat"
+
+"layak",
+"kelayakan",
+"siapa layak",
+"siapa boleh guna",
+"boleh guna",
+"boleh menggunakan",
+"eligible",
+"eligibility",
+"who is eligible",
+"can i use"
+
 ],
 
 answer:`
-🔒 MyPDT hanya memaparkan maklumat yang berkaitan dengan proses pengambilan pasport.
 
-Akses kepada fungsi pegawai adalah terhad kepada pegawai yang diberi kebenaran.
+👥 Perkhidmatan MyPDT disediakan kepada lima kumpulan sasar:
+
+✅ Warga Emas (60 tahun dan ke atas)
+
+✅ Orang Kurang Upaya (OKU)
+
+✅ Wanita Hamil
+
+✅ Pemohon Online
+
+✅ VIP
+
+Sekiranya anda tergolong dalam salah satu kategori di atas, anda layak menggunakan perkhidmatan MyPDT.
+
 `
+
+},
+
+
+// =====================================================
+// 14. WARGA EMAS
+// =====================================================
+wargaemas:{
+
+title:"👴 Warga Emas",
+
+keywords:[
+
+"warga emas",
+"orang tua",
+"senior",
+"senior citizen",
+"umur 60",
+"60 tahun",
+"61 tahun",
+"65 tahun",
+"70 tahun",
+"ibu saya",
+"ayah saya"
+
+],
+
+answer:`
+
+👴 Warga emas yang berumur 60 tahun dan ke atas layak menggunakan perkhidmatan MyPDT.
+
+Sila hadir bersama MyKad, pasport lama dan dokumen lain yang diperlukan.
+
+`
+
+},
+
+
+// =====================================================
+// 15. OKU
+// =====================================================
+oku:{
+
+title:"♿ Orang Kurang Upaya (OKU)",
+
+keywords:[
+
+"oku",
+"orang kurang upaya",
+"orang kelainan upaya",
+"disabled",
+"wheelchair",
+"kerusi roda",
+"kad oku"
+
+],
+
+answer:`
+
+♿ Orang Kurang Upaya (OKU) merupakan salah satu kumpulan sasar MyPDT.
+
+Sila bawa MyKad, pasport lama serta Kad OKU sekiranya berkaitan.
+
+`
+
+},
+
+
+// =====================================================
+// 16. WANITA HAMIL
+// =====================================================
+hamil:{
+
+title:"🤰 Wanita Hamil",
+
+keywords:[
+
+"hamil",
+"wanita hamil",
+"mengandung",
+"pregnant",
+"pregnancy"
+
+],
+
+answer:`
+
+🤰 Wanita hamil layak menggunakan perkhidmatan MyPDT.
+
+Perkhidmatan ini diwujudkan bagi memberikan pengalaman pengambilan pasport yang lebih selesa dan teratur.
+
+`
+
+},
+
+
+// =====================================================
+// 17. PEMOHON ONLINE
+// =====================================================
+online:{
+
+title:"💻 Pemohon Online",
+
+keywords:[
+
+"pemohon online",
+"permohonan online",
+"online",
+"passport online",
+"pasport online",
+"mohon online",
+"dalam talian"
+
+],
+
+answer:`
+
+💻 Pemohon yang membuat permohonan pasport secara dalam talian layak menggunakan perkhidmatan MyPDT.
+
+`
+
+},
+
+
+// =====================================================
+// 18. VIP
+// =====================================================
+vip:{
+
+title:"⭐ VIP",
+
+keywords:[
+
+"vip",
+"orang kenamaan",
+"kenamaan"
+
+],
+
+answer:`
+
+⭐ Golongan VIP merupakan salah satu kumpulan sasar yang layak menggunakan MyPDT.
+
+`
+
+},
+
+
+// =====================================================
+// 19. DOKUMEN
+// =====================================================
+dokumen:{
+
+title:"📄 Dokumen Diperlukan",
+
+keywords:[
+
+"dokumen",
+"apa perlu bawa",
+"apa kena bawa",
+"mykad",
+"kad pengenalan",
+"passport lama",
+"pasport lama",
+"resit",
+"resit bayaran",
+"dokumen sokongan",
+"ic"
+
+],
+
+answer:`
+
+📄 Dokumen yang perlu dibawa semasa hadir:
+
+✅ MyKad
+
+✅ Pasport Lama
+
+✅ Resit Bayaran
+
+✅ Dokumen Sokongan (jika berkaitan)
+
+Pastikan semua dokumen dibawa bagi melancarkan proses pengambilan pasport.
+
+`
+
+},
+
+
+// =====================================================
+// 20. WAKIL MENGAMBIL PASPORT
+// =====================================================
+wakil:{
+
+title:"👨‍👩‍👧 Wakil Pengambilan Pasport",
+
+keywords:[
+
+"wakil",
+"boleh wakil",
+"orang lain ambil",
+"wakil ambil",
+"ambil bagi pihak",
+"representative",
+"collect for me"
+
+],
+
+answer:`
+
+👨‍👩‍👧 Permohonan pengambilan melalui wakil adalah tertakluk kepada syarat dan prosedur Jabatan Imigresen Malaysia.
+
+Sila hubungi Jabatan Imigresen Malaysia Negeri Johor untuk mendapatkan maklumat lanjut sebelum hadir.
+
+`
+
 },
 
 // =====================================================
-// 38. PERTANYAAN LAIN
+// 21. RESIT HILANG
+// =====================================================
+resithilang:{
+
+title:"🧾 Resit Hilang",
+
+keywords:[
+
+"resit hilang",
+"hilang resit",
+"tak jumpa resit",
+"resit tak ada",
+"lost receipt",
+"receipt hilang",
+"receipt lost",
+"resit tercicir"
+
+],
+
+answer:`
+
+🧾 Sekiranya resit bayaran hilang, sila hadir ke Jabatan Imigresen Malaysia Negeri Johor bersama MyKad untuk semakan lanjut.
+
+Pegawai akan membantu menyemak rekod sebelum proses pengambilan pasport diteruskan.
+
+`
+
+},
+
+
+// =====================================================
+// 22. PASPORT LAMA ROSAK
+// =====================================================
+passportrosak:{
+
+title:"📕 Pasport Lama Rosak",
+
+keywords:[
+
+"passport rosak",
+"pasport rosak",
+"passport koyak",
+"pasport koyak",
+"passport basah",
+"pasport basah",
+"pma rosak"
+
+],
+
+answer:`
+
+📕 Sekiranya pasport lama rosak, sila bawa pasport tersebut semasa hadir.
+
+Pegawai akan membuat semakan mengikut prosedur Jabatan Imigresen Malaysia sebelum penyerahan pasport baharu.
+
+`
+
+},
+
+
+// =====================================================
+// 23. DOKUMEN TIDAK LENGKAP
+// =====================================================
+dokumentidaklengkap:{
+
+title:"⚠️ Dokumen Tidak Lengkap",
+
+keywords:[
+
+"dokumen tak lengkap",
+"dokumen tidak lengkap",
+"tertinggal dokumen",
+"lupa bawa mykad",
+"lupa bawa passport",
+"tak cukup dokumen"
+
+],
+
+answer:`
+
+⚠️ Semua dokumen yang diperlukan hendaklah dibawa semasa hadir.
+
+Sekiranya dokumen tidak lengkap, urusan pengambilan pasport mungkin tidak dapat diproses sehingga dokumen lengkap dikemukakan.
+
+`
+
+},
+
+
+// =====================================================
+// 24. WALK-IN
+// =====================================================
+walkin:{
+
+title:"🚶 Perkhidmatan Walk-In",
+
+keywords:[
+
+"walk-in",
+"walk in",
+"walkin",
+"kaunter",
+"datang terus",
+"tanpa tempahan",
+"tak perlu booking"
+
+],
+
+answer:`
+
+🚶 Walk-In tidak memerlukan tempahan.
+
+Waktu operasi:
+
+📅 Isnin hingga Rabu
+
+🕘 9.00 pagi – 1.00 tengah hari
+
+🕝 2.30 petang – 4.00 petang
+
+`
+
+},
+
+
+// =====================================================
+// 25. DRIVE-IN
+// =====================================================
+drivein:{
+
+title:"🚗 Perkhidmatan Drive-In",
+
+keywords:[
+
+"drive-in",
+"drive in",
+"drivein",
+"ambil dalam kereta",
+"dalam kereta",
+"tak turun kereta",
+"pandu masuk"
+
+],
+
+answer:`
+
+🚗 Drive-In membolehkan pelanggan mengambil pasport menggunakan kenderaan tanpa perlu memasuki ruang menunggu.
+
+📌 Tempahan slot diperlukan sebelum hadir.
+
+`
+
+},
+
+
+// =====================================================
+// 26. TEMPAHAN SLOT
+// =====================================================
+tempahan:{
+
+title:"📅 Tempahan Slot",
+
+keywords:[
+
+"tempahan",
+"tempah",
+"slot",
+"booking",
+"book",
+"reserve",
+"buat tempahan",
+"google form"
+
+],
+
+answer:`
+
+📅 Tempahan hanya diperlukan bagi perkhidmatan Drive-In.
+
+Pelanggan boleh membuat tempahan melalui Google Form rasmi MyPDT dengan mengimbas Kod QR yang disediakan.
+
+Perkhidmatan Walk-In tidak memerlukan tempahan.
+
+`
+
+},
+
+
+// =====================================================
+// 27. QR CODE
+// =====================================================
+qrcode:{
+
+title:"📱 Kod QR",
+
+keywords:[
+
+"qr",
+"qr code",
+"kod qr",
+"scan qr",
+"imbas qr"
+
+],
+
+answer:`
+
+📱 Kod QR disediakan bagi memudahkan pelanggan membuat tempahan slot Drive-In.
+
+Imbas Kod QR menggunakan telefon pintar dan lengkapkan maklumat yang diperlukan.
+
+`
+
+},
+
+
+// =====================================================
+// 28. SLOT PENUH
+// =====================================================
+slotpenuh:{
+
+title:"🚫 Slot Penuh",
+
+keywords:[
+
+"slot penuh",
+"full slot",
+"habis slot",
+"tiada slot",
+"tak ada slot",
+"booking penuh"
+
+],
+
+answer:`
+
+🚫 Sekiranya slot Drive-In telah penuh:
+
+✅ Pilih tarikh lain yang masih mempunyai kekosongan.
+
+ATAU
+
+✅ Gunakan perkhidmatan Walk-In sekiranya layak.
+
+`
+
+},
+
+// =====================================================
+// 29. LOKASI
+// =====================================================
+lokasi:{
+
+title:"📍 Lokasi MyPDT",
+
+keywords:[
+
+"lokasi",
+"alamat",
+"di mana",
+"dimana",
+"kat mana",
+"setia tropika",
+"blok 1",
+"kompleks kdn",
+"johor bahru"
+
+],
+
+answer:`
+
+📍 Lokasi MyPDT:
+
+Jabatan Imigresen Malaysia Negeri Johor
+
+Blok 1,
+Kompleks Kementerian Dalam Negeri,
+Taman Setia Tropika,
+81200 Johor Bahru,
+Johor.
+
+`
+
+},
+
+
+// =====================================================
+// 30. WAKTU OPERASI
+// =====================================================
+operasi:{
+
+title:"🕒 Waktu Operasi",
+
+keywords:[
+
+"waktu",
+"waktu operasi",
+"operasi",
+"jam berapa",
+"pukul berapa",
+"buka",
+"tutup",
+"isnin",
+"selasa",
+"rabu",
+"khamis",
+"jumaat",
+"sabtu",
+"ahad",
+"cuti umum"
+
+],
+
+answer:`
+
+🚗 DRIVE-IN
+
+📅 Isnin hingga Rabu
+
+🕙 10.00 pagi – 1.00 tengah hari
+
+🕝 2.30 petang – 4.00 petang
+
+━━━━━━━━━━━━━━
+
+🚶 WALK-IN
+
+📅 Isnin hingga Rabu
+
+🕘 9.00 pagi – 1.00 tengah hari
+
+🕝 2.30 petang – 4.00 petang
+
+━━━━━━━━━━━━━━
+
+❌ Ditutup pada:
+
+* Khamis
+* Jumaat
+* Sabtu
+* Ahad
+* Cuti Umum
+
+`
+
+},
+
+
+// =====================================================
+// 31. TEMPOH PROSES
+// =====================================================
+tempoh:{
+
+title:"⏱️ Tempoh Pengambilan",
+
+keywords:[
+
+"berapa lama",
+"tempoh",
+"masa",
+"10 minit",
+"berapa minit",
+"cepat",
+"lama"
+
+],
+
+answer:`
+
+⏱️ Tempoh pengambilan pasport dianggarkan sekitar 10 minit sekiranya semua dokumen lengkap.
+
+`
+
+},
+
+
+// =====================================================
+// 32. MYPASSPORT SMART FINDER
+// =====================================================
+mypsf:{
+
+title:"🔍 MyPassport Smart Finder",
+
+keywords:[
+
+"mypsf",
+"smart finder",
+"passport finder",
+"pasport finder",
+"status passport",
+"status pasport",
+"semak passport",
+"semak pasport",
+"cari passport",
+"cari pasport"
+
+],
+
+answer:`
+
+🔍 MyPassport Smart Finder (MyPSF) merupakan inovasi yang membantu mempercepatkan proses carian dan penyerahan pasport.
+
+👤 Pelanggan boleh menyemak status pasport menggunakan No. Resit.
+
+👨‍💼 Pegawai boleh membuat carian pasport menggunakan No. Resit atau barcode dengan lebih pantas dan tepat.
+
+`
+
+},
+
+
+// =====================================================
+// 33. HUBUNGI KAMI
 // =====================================================
 hubungi:{
+
 title:"☎️ Hubungi Kami",
 
 keywords:[
-"pegawai",
-"bantuan",
-"tolong",
-"hubungi",
-"contact",
-"call",
+
 "telefon",
+"hubungi",
+"call",
+"contact",
 "nombor telefon",
-"email",
-"emel"
+"no telefon",
+"phone"
+
 ],
 
 answer:`
-☎️ Untuk bantuan lanjut, sila hubungi:
 
-Jabatan Imigresen Malaysia Negeri Johor
+☎️ Jabatan Imigresen Malaysia Negeri Johor
 
 📞 07-2338510
 
 📧 inovasi.jimj@imi.gov.my
 
 Pegawai kami sedia membantu anda.
+
 `
+
 },
 
+
 // =====================================================
-// 39. TERIMA KASIH
+// 34. EMEL
+// =====================================================
+emel:{
+
+title:"📧 Emel",
+
+keywords:[
+
+"email",
+"emel",
+"e-mail",
+"alamat email",
+"alamat emel"
+
+],
+
+answer:`
+
+📧 Emel rasmi MyPDT:
+
+inovasi.jimj@imi.gov.my
+
+`
+
+},
+
+
+// =====================================================
+// 35. UCAPAN SALAM
+// =====================================================
+salam:{
+
+title:"👋 Selamat Datang",
+
+keywords:[
+
+"hai",
+"hi",
+"hello",
+"helo",
+"assalamualaikum",
+"assalamualaikum wbt",
+"assalamualaikum wrt",
+"salam",
+"selamat pagi",
+"selamat petang",
+"selamat malam"
+
+],
+
+answer:`
+
+👋 Selamat datang ke MyPDT Smart AI Assistant.
+
+Saya boleh membantu anda berkaitan:
+
+👥 Kelayakan
+
+📄 Dokumen
+
+🚗 Drive-In
+
+🚶 Walk-In
+
+📅 Tempahan Slot
+
+📍 Lokasi
+
+🕒 Waktu Operasi
+
+🔍 MyPassport Smart Finder
+
+Sila taip soalan anda.
+
+`
+
+},
+
+
+// =====================================================
+// 36. TERIMA KASIH
 // =====================================================
 terimakasih:{
+
 title:"😊 Terima Kasih",
 
 keywords:[
+
 "terima kasih",
 "thanks",
 "thank you",
 "tq",
 "makasih"
+
 ],
 
 answer:`
+
 😊 Sama-sama.
 
 Terima kasih kerana menggunakan MyPDT Smart AI Assistant.
 
 Semoga urusan anda dipermudahkan.
+
 `
-},
 
-// =====================================================
-// 40. PENUTUP / FALLBACK
-// =====================================================
-fallback:{
-title:"",
-
-keywords:[
-"tiada jawapan"
-],
-
-answer:`
-Maaf, saya tidak mempunyai maklumat mengenai pertanyaan tersebut.
-
-Sila hubungi atau kunjungi Jabatan Imigresen Malaysia Negeri Johor untuk mendapatkan maklumat lanjut.
-
-📞 Telefon:
-07-2338510
-
-📧 Emel:
-inovasi.jimj@imi.gov.my
-
-Terima kasih.
-`
 }
 
 };
