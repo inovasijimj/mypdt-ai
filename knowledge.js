@@ -626,8 +626,8 @@ keywords:[
 "vip",
 "orang kenamaan",
 "kenamaan"
-"orang vip"
-"yb"
+"orang vip",
+"yb",
 "golongan vip"
 
 ],
@@ -660,7 +660,7 @@ keywords:[
 "resit",
 "resit bayaran",
 "dokumen sokongan",
-"ic"
+"ic",
 "nak bawa apa"
 
 ],
@@ -701,9 +701,9 @@ keywords:[
 "wakil ambil",
 "ambil bagi pihak",
 "representative",
-"collect for me"
-"ambil untuk anak"
-"ambil untuk mak"
+"collect for me",
+"ambil untuk anak",
+"ambil untuk mak",
 "ambil untuk ayah"
 
 ],
@@ -859,6 +859,10 @@ keywords:[
 "ambil dalam kereta",
 "dalam kereta",
 "tak turun kereta",
+"naik motosikal",
+"naik moto",
+"bawa motosikal",
+"moto",
 "pandu masuk"
 
 ],
