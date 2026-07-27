@@ -625,7 +625,7 @@ keywords:[
 
 "vip",
 "orang kenamaan",
-"kenamaan"
+"kenamaan",
 "orang vip",
 "yb",
 "golongan vip"
