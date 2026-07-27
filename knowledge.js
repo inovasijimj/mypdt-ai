@@ -1200,7 +1200,7 @@ inovasi.jimj@imi.gov.my
 // 35. UCAPAN SALAM
 // =====================================================
 
-assalamualaikum:{
+waalaikum:{
     title:"🤲 Waalaikumussalam",
 
     keywords:[
