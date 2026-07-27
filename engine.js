@@ -87,7 +87,13 @@ function calculateScore(question, item) {
         const normalizedKeyword = normalizeText(keyword);
 
 
-        if (question.includes(normalizedKeyword)) {
+       const words = question.split(/\s+/);
+
+if (
+    normalizedKeyword.length <= 2
+        ? words.includes(normalizedKeyword)
+        : question.includes(normalizedKeyword)
+) {
 
             const wordCount =
                 normalizedKeyword.split(/\s+/).length;
