@@ -1195,6 +1195,35 @@ inovasi.jimj@imi.gov.my
 // =====================================================
 // 35. UCAPAN SALAM
 // =====================================================
+
+assalamualaikum:{
+    title:"🤲 Waalaikumussalam",
+
+    keywords:[
+        "assalamualaikum",
+        "assalamualaikum wbt",
+        "assalamualaikum wr wb",
+        "assalamualaikum warahmatullahi wabarakatuh"
+    ],
+
+    answer:`
+🤲 Waalaikumussalam warahmatullahi wabarakatuh.
+
+Selamat datang ke MyPDT Smart AI Assistant.
+
+Saya sedia membantu anda berkaitan:
+👥 Kelayakan
+📄 Dokumen
+🚗 Drive-In
+🚶 Walk-In
+📅 Tempahan Slot
+📦 MyPSF
+❓ Soalan Lazim
+
+Sila taip soalan anda.
+`
+},
+
 salam:{
 
 title:"👋 Selamat Datang",
@@ -1205,9 +1234,6 @@ keywords:[
 "hi",
 "hello",
 "helo",
-"assalamualaikum",
-"assalamualaikum wbt",
-"assalamualaikum wrt",
 "salam",
 "selamat pagi",
 "selamat petang",
