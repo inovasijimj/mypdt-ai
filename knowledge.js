@@ -349,7 +349,6 @@ title:"🤖 AI Smart Assistant",
 
 keywords:[
 
-"ai",
 "chatbot",
 "smart assistant",
 "robot",
