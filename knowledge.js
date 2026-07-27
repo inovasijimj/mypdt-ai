@@ -34,7 +34,7 @@ answer:`
 
 MyPDT menyediakan kemudahan pengambilan pasport secara Walk-In dan Drive-In yang lebih mudah, cepat dan teratur kepada golongan sasar yang layak.
 
-Perkhidmatan ini dibangunkan bagi meningkatkan pengalaman pelanggan, mengurangkan kesesakan di kaunter serta memperkukuhkan penyampaian perkhidmatan secara digital.
+Perkhidmatan ini dibangunkan bagi meningkatkan pengalaman pelanggan, mengurangkan kesesakan di kaunter utama serta memperkukuhkan penyampaian perkhidmatan secara digital.
 
 `
 
@@ -68,7 +68,7 @@ answer:`
 
 🎯 Objektif MyPDT ialah:
 
-✅ Mengurangkan kesesakan di kaunter pengambilan pasport.
+✅ Mengurangkan kesesakan di kaunter utama pengambilan pasport.
 
 ✅ Mempercepatkan proses pengambilan pasport.
 
@@ -142,11 +142,11 @@ answer:`
 
 ✅ Mengurangkan masa menunggu.
 
-✅ Mengurangkan kesesakan di kaunter.
+✅ Mengurangkan kesesakan di kaunter utama.
 
 ✅ Menawarkan pilihan Walk-In dan Drive-In.
 
-✅ Tempahan slot secara digital.
+✅ Tempahan slot masa secara digital.
 
 ✅ AI Smart Assistant.
 
@@ -219,13 +219,13 @@ answer:`
 
 * Portal MyPDT
 
-* Tempahan Slot secara dalam talian
+* Tempahan Slot Masa secara dalam talian
 
 * AI Smart Assistant
 
 * MyPassport Smart Finder
 
-* Pengurusan data masa nyata menggunakan Google Apps Script dan Google Sheets.
+* Pengurusan data menggunakan Google Apps Script dan Google Sheets.
 
 `
 
@@ -366,7 +366,7 @@ answer:`
 
 AI ini menggunakan knowledge base rasmi MyPDT bagi memastikan jawapan yang diberikan adalah konsisten, tepat dan selaras dengan prosedur perkhidmatan.
 
-Sekiranya maklumat tidak ditemui, pengguna disarankan menghubungi Jabatan Imigresen Malaysia bagi mendapatkan bantuan lanjut.
+Sekiranya maklumat tidak ditemui, pengguna disarankan menghubungi pegawai di Jabatan Imigresen Malaysia Negeri Johor bagi mendapatkan bantuan lanjut.
 
 `
 
@@ -521,7 +521,7 @@ answer:`
 
 👴 Warga emas yang berumur 60 tahun dan ke atas layak menggunakan perkhidmatan MyPDT.
 
-Sila hadir bersama MyKad, pasport lama dan dokumen lain yang diperlukan.
+Sila hadir bersama MyKad, pasport lama dan dokumen lain yang berkaitan.
 
 `
 
@@ -551,7 +551,7 @@ answer:`
 
 ♿ Orang Kurang Upaya (OKU) merupakan salah satu kumpulan sasar MyPDT.
 
-Sila bawa MyKad, pasport lama serta Kad OKU sekiranya berkaitan.
+Sila bawa MyKad, pasport lama, Kad OKU dan dokumen lain yang berkaitan.
 
 `
 
@@ -626,6 +626,9 @@ keywords:[
 "vip",
 "orang kenamaan",
 "kenamaan"
+"orang vip"
+"yb"
+"golongan vip"
 
 ],
 
@@ -658,6 +661,7 @@ keywords:[
 "resit bayaran",
 "dokumen sokongan",
 "ic"
+"nak bawa apa"
 
 ],
 
@@ -670,6 +674,8 @@ answer:`
 ✅ Pasport Lama
 
 ✅ Resit Bayaran
+
+✅ Kad OKU (jika berkaitan)
 
 ✅ Dokumen Sokongan (jika berkaitan)
 
@@ -696,12 +702,15 @@ keywords:[
 "ambil bagi pihak",
 "representative",
 "collect for me"
+"ambil untuk anak"
+"ambil untuk mak"
+"ambil untuk ayah"
 
 ],
 
 answer:`
 
-👨‍👩‍👧 Permohonan pengambilan melalui wakil adalah tertakluk kepada syarat dan prosedur Jabatan Imigresen Malaysia.
+👨‍👩‍👧 Permohonan pengambilan pasport melalui wakil tidak dibenarkan ianya adalah tertakluk kepada syarat dan prosedur Jabatan Imigresen Malaysia.
 
 Sila hubungi Jabatan Imigresen Malaysia Negeri Johor untuk mendapatkan maklumat lanjut sebelum hadir.
 
@@ -763,7 +772,7 @@ answer:`
 
 📕 Sekiranya pasport lama rosak, sila bawa pasport tersebut semasa hadir.
 
-Pegawai akan membuat semakan mengikut prosedur Jabatan Imigresen Malaysia sebelum penyerahan pasport baharu.
+Pegawai akan membuat semakan mengikut prosedur Jabatan Imigresen Malaysia sebelum penyerahan pasport baharu dibuat.
 
 `
 
@@ -856,7 +865,7 @@ keywords:[
 
 answer:`
 
-🚗 Drive-In membolehkan pelanggan mengambil pasport menggunakan kenderaan tanpa perlu memasuki ruang menunggu.
+🚗 Drive-In membolehkan pelanggan mengambil pasport menggunakan kenderaan dengan memandu masuk terus ke kaunter MyPDT .
 
 📌 Tempahan slot diperlukan sebelum hadir.
 
@@ -948,11 +957,11 @@ answer:`
 
 🚫 Sekiranya slot Drive-In telah penuh:
 
-✅ Pilih tarikh lain yang masih mempunyai kekosongan.
+✅ Pilih tarikh/masa lain yang masih mempunyai kekosongan.
 
 ATAU
 
-✅ Gunakan perkhidmatan Walk-In sekiranya layak.
+✅ Gunakan perkhidmatan Walk-In sekiranya anda golongan yang layak.
 
 `
 
@@ -1112,9 +1121,9 @@ answer:`
 
 🔍 MyPassport Smart Finder (MyPSF) merupakan inovasi yang membantu mempercepatkan proses carian dan penyerahan pasport.
 
-👤 Pelanggan boleh menyemak status pasport menggunakan No. Resit.
+👤 Pelanggan boleh menyemak status pasport menggunakan No. Resit/No. Kad Pengenalan.
 
-👨‍💼 Pegawai boleh membuat carian pasport menggunakan No. Resit atau barcode dengan lebih pantas dan tepat.
+👨‍💼 Pegawai boleh membuat carian pasport menggunakan No. Resit atau barcode dengan lebih pantas dan tepat serta No. Kad Pengenalan.
 
 `
 
@@ -1213,19 +1222,12 @@ answer:`
 Saya boleh membantu anda berkaitan:
 
 👥 Kelayakan
-
 📄 Dokumen
-
 🚗 Drive-In
-
 🚶 Walk-In
-
 📅 Tempahan Slot
-
 📍 Lokasi
-
 🕒 Waktu Operasi
-
 🔍 MyPassport Smart Finder
 
 Sila taip soalan anda.
