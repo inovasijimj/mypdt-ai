@@ -1204,7 +1204,7 @@ waalaikum:{
     title:"🤲 Waalaikumussalam",
 
     keywords:[
-        "assalamualaikum",
+        "assalamualaikum" ,
         "assalamualaikum wbt",
         "assalamualaikum wr wb",
         "assalamualaikum warahmatullahi wabarakatuh"
