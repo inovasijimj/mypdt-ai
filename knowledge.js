@@ -1203,6 +1203,7 @@ waalaikum:{
     title:"🤲 Waalaikumussalam",
 
     keywords:[
+        "assalam",
         "assalamualaikum" ,
         "assalamualaikum wbt",
         "assalamualaikum wr wb",
@@ -1210,7 +1211,7 @@ waalaikum:{
     ],
 
     answer:`
-🤲 Waalaikumussalam warahmatullahi wabarakatuh.
+🤲 Waalaikumussalam.
 
 Selamat datang ke MyPDT Smart AI Assistant.
 
