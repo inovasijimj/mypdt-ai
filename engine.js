@@ -348,30 +348,10 @@ Contoh:
             title: "🤖 MyPDT Smart AI",
 
             answer: `
-Maaf, saya belum mempunyai jawapan khusus untuk soalan tersebut.
-
-Saya boleh membantu anda mengenai:
-
-👥 Kelayakan MyPDT
-
-📄 Dokumen yang diperlukan
-
-🕒 Waktu operasi
-
-🚗 Drive-In
-
-🚶 Walk-In
-
-📅 Tempahan slot
-
-📍 Lokasi MyPDT
-
-⏱️ Tempoh proses
-
-☎️ Maklumat untuk dihubungi
-
-Sila cuba tanya menggunakan ayat yang lebih khusus.
-            `,
+Maaf, pertanyaan ini berada di luar skop pangkalan maklumat MyPDT AI ChatBot. Untuk maklumat yang lebih tepat dan terkini,
+sila rujuk Pegawai di Jabatan Imigresen Malaysia Negeri Johor. Selain itu, anda juga boleh mencuba menggunakan ayat 
+yang lebih khusus.
+        `,
 
             score: 0,
 
